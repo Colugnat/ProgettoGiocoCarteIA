@@ -1,1 +1,1 @@
-# Progetto gioco carte con IA
+# Progetto gioco di carte con IA
