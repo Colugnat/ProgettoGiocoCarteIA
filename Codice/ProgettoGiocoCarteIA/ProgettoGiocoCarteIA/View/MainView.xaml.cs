@@ -15,6 +15,9 @@ using System;
 using System.Threading;
 using Patagames.Ocr;
 using Patagames.Ocr.Enums;
+using System.Linq;
+using System.Windows.Media.Imaging;
+using System.IO;
 
 namespace ProgettoGiocoCarteIA.View
 {
@@ -23,6 +26,8 @@ namespace ProgettoGiocoCarteIA.View
     /// </summary>
     public partial class MainView : UserControl
     {
+        public const int COUNTNUMCARD = 50;
+        public const int MSECONDNUMCARD = 200;
         public MainView()
         {
             InitializeComponent();
@@ -48,28 +53,30 @@ namespace ProgettoGiocoCarteIA.View
         {
             var cameraId = (WebCameraId)comboBox.SelectedItem;
             webCameraControl.StartCapture(cameraId);
-            TakeNumber();
+            
         }
-        public void TakeNumber()
+        public int TakeNumber()
         {
-            while(true)
+            int[] finalNum = new int[10];
+            for(int i = 0; i < COUNTNUMCARD;  i++)
             {
-                Thread.Sleep(1000);
-                //Bitmap image = new Bitmap(webCameraControl.GetCurrentImage());
-                //Tesseract ocr = new Tesseract();
-                //ocr.SetVariable("tessedit_char_whitelist", "0123456789"); // If digit only
-                //ocr.Init(@"C:\OCRTest\tessdata\", "eng", false); // To use correct tessdata
-                //List<tessnet2.Word> result = ocr.DoOCR(image, Rectangle.Empty);
-                //foreach (tessnet2.Word word in result)
-                //    Console.WriteLine("{0} : {1}", word.Confidence, word.Text);
+                Thread.Sleep(MSECONDNUMCARD);
                 using (var api = OcrApi.Create())
                 {
                     api.SetVariable("tessedit_char_whitelist", "0123456789");
                     api.Init(Languages.English);
                     string plainText = api.GetTextFromImage((Bitmap)webCameraControl.GetCurrentImage());
                     Console.WriteLine("prova" + plainText);
+                    for (int y = 0; y < 10; y++)
+                    {
+                        if(plainText.Contains(y.ToString()))
+                        {
+                            finalNum[y] += 1;
+                        }
+                    }
                 }
             }
+            return finalNum.ToList().IndexOf(finalNum.Max());
         }
 
         private void OnStopButtonClick(object sender, RoutedEventArgs e)
@@ -87,7 +94,7 @@ namespace ProgettoGiocoCarteIA.View
             Bitmap bitmap = null;
             bitmap = (Bitmap)webCameraControl.GetCurrentImage();
             Boolean IsColorFound = false;
-
+            int number = TakeNumber();
 
 
             if (bitmap != null)
@@ -106,25 +113,25 @@ namespace ProgettoGiocoCarteIA.View
                         if (now_color.R <= 50 && now_color.G >= 100 && now_color.B <= 50)
                         {
                             IsColorFound = true;
-                            MessageBox.Show("Color green Found!");
+                            MessageBox.Show("Number " + number + ", color green Found!");
                             break;
                         }
                         if (now_color.R >= 100 && now_color.G >= 100 && now_color.B <= 50)
                         {
                             IsColorFound = true;
-                            MessageBox.Show("Color yellow Found!");
+                            MessageBox.Show("Number " + number + ", color yellow Found!");
                             break;
                         }
                         if (now_color.R <= 50 && now_color.G <= 50 && now_color.B >= 100)
                         {
                             IsColorFound = true;
-                            MessageBox.Show("Color blue Found!");
+                            MessageBox.Show("Number " + number + ", color blue Found!");
                             break;
                         }
                         if (now_color.R >= 100 && now_color.G <= 50 && now_color.B <= 50)
                         {
                             IsColorFound = true;
-                            MessageBox.Show("Color red Found!");
+                            MessageBox.Show("Number " + number + ", color red Found!");
                             break;
                         }
                     }
@@ -135,7 +142,7 @@ namespace ProgettoGiocoCarteIA.View
                 }
                 if (IsColorFound == false)
                 {
-                    MessageBox.Show("Selected Color Not Found.");
+                    MessageBox.Show("Selected Color Not Found. " + number);
                 }
             }
             else
