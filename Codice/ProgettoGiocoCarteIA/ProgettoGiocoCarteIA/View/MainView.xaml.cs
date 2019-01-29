@@ -91,17 +91,14 @@ namespace ProgettoGiocoCarteIA.View
         }
         private void OnImageButtonClick(object sender, RoutedEventArgs e)
         {
-            Bitmap bitmap = null;
-            bitmap = (Bitmap)webCameraControl.GetCurrentImage();
+            Bitmap bmp = null;
+            bmp = (Bitmap)webCameraControl.GetCurrentImage();
             Boolean IsColorFound = false;
             int number = TakeNumber();
 
 
-            if (bitmap != null)
+            if (bmp != null)
             {
-                //Converting loaded image into bitmap
-                Bitmap bmp = new Bitmap(bitmap);
-
                 //Iterate whole bitmap to findout the picked color
                 for (int i = 0; i < bmp.Height; i++)
                 {
