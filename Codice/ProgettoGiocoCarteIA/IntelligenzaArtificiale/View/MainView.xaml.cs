@@ -118,8 +118,6 @@ namespace IntelligenzaArtificiale.View
                     AddTab(false);
                 }
             }
-            //cardAICopy = (String[][])cardAI.Clone();
-            //cardInGameCopy = (String[])cardInGame.Clone();
         }
     }
 }
