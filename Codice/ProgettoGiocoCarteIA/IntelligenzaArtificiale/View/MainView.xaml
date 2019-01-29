@@ -31,10 +31,10 @@
         <TextBlock x:Name="carta4" Grid.Column="4"></TextBlock>
         <TextBlock x:Name="carta5" Grid.Column="5"></TextBlock>
         <TextBlock x:Name="carta6" Grid.Column="6"></TextBlock>
-        <RadioButton IsChecked="True" x:Name="color0" GroupName="color" Grid.Column="0" Grid.Row="1" Content="Rosso" Grid.RowSpan="4"></RadioButton>
-        <RadioButton x:Name="color1" GroupName="color" Grid.Column="1" Grid.Row="1" Content="Giallo" Grid.RowSpan="4"></RadioButton>
-        <RadioButton x:Name="color2" GroupName="color" Grid.Column="2" Grid.Row="1" Content="Verde" Grid.RowSpan="4"></RadioButton>
-        <RadioButton x:Name="color3" GroupName="color" Grid.Column="3" Grid.Row="1" Content="Blu" Grid.RowSpan="4"></RadioButton>
+        <RadioButton IsChecked="True" x:Name="color0" GroupName="color" Grid.Column="0" Grid.Row="1" Content="Rosso"></RadioButton>
+        <RadioButton x:Name="color1" GroupName="color" Grid.Column="1" Grid.Row="1" Content="Giallo"></RadioButton>
+        <RadioButton x:Name="color2" GroupName="color" Grid.Column="2" Grid.Row="1" Content="Verde"></RadioButton>
+        <RadioButton x:Name="color3" GroupName="color" Grid.Column="3" Grid.Row="1" Content="Blu"></RadioButton>
         <xctk:IntegerUpDown x:Name="number" Grid.Column="0" Grid.Row="2" AllowTextInput="False" Value="0" Increment="1" Minimum="0" Maximum="9"/>
         <Button Click="Button_Click" Content="Scegli" Grid.Column="1" Grid.Row="2"></Button>
         <TextBlock Grid.Column="2" Grid.Row="2" Text="Carta:"></TextBlock>
