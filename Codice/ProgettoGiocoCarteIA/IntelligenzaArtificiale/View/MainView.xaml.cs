@@ -27,11 +27,15 @@ namespace IntelligenzaArtificiale.View
         private String[] cardInGameCopy = null;
         private String[][] cardAI = null;
         private String[][] cardAICopy = null;
+        private List<String> combinations = new List<String>();
+        private List<String>[] saveCombinations = null;
+        private int addCard = 0;
 
         public MainView()
         {
             cardInGame = new String[2];
             cardAI = new String[7][];
+            saveCombinations = new List<string>[10];
             InitializeComponent();
             for(int i = 0; i < 7; i++)
             {
@@ -86,7 +90,7 @@ namespace IntelligenzaArtificiale.View
             cardInGame[1] = number.Value.ToString();
 
            cardGame.Text = cardInGame[0] + " " + cardInGame[1];
-           SelectGame(cardInGame[0], cardInGame[1]);
+           SelectGame(cardInGame[0], cardInGame[1], false);
         }
         private String AddTab(bool remove)
         {
@@ -101,23 +105,34 @@ namespace IntelligenzaArtificiale.View
             }
             return tab;
         }
-        private void SelectGame(String selectedCard, String selectedNum)
+        private void Save()
+        {
+            if(combinations.Count !=  0)
+            {
+                addCard += 1;
+                saveCombinations[addCard - 1] = combinations.ToList();
+            }
+        }
+        private void SelectGame(String selectedCard, String selectedNum, bool nextIsMy)
         {
             for(int i = 0; i < cardAICopy.Length; i++)
             {
-                if ((cardAICopy[i][0] == selectedCard) || (cardAICopy[i][1] == selectedNum))
+                if (((cardAICopy[i][0] == selectedCard) && !nextIsMy) || (cardAICopy[i][1] == selectedNum))
                 {
                     cardsMove.Text += AddTab(true) + cardAICopy[i][0] + " " + cardAICopy[i][1] + Environment.NewLine;
                     cardInGameCopy[0] = cardAICopy[i][0];
                     cardInGameCopy[1] = cardAICopy[i][1];
+                    combinations.Add(cardInGameCopy[0] + " " + cardInGameCopy[1]);
                     cardAICopy[i][0] = "";
                     cardAICopy[i][1] = "";
-                    SelectGame(cardInGameCopy[0], cardInGameCopy[1]);
+                    SelectGame(cardInGameCopy[0], cardInGameCopy[1], true);
                     cardAICopy[i][0] = cardAI[i][0];
                     cardAICopy[i][1] = cardAI[i][1];
                     AddTab(false);
                 }
             }
+            Save();
+            combinations.RemoveRange(0, combinations.Count);
         }
     }
 }
