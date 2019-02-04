@@ -41,5 +41,6 @@
         <TextBlock x:Name="cardGame" Grid.Column="3" Grid.Row="2"></TextBlock>
         <TextBlock Grid.Column="0" Grid.Row="3" Text="Mossa:"></TextBlock>
         <TextBlock x:Name="cardsMove" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="7"></TextBlock>
+        <Button Click="Button_Click_1" Content="Shuffle" Grid.Column="6" Grid.Row="2"></Button>
     </Grid>
 </UserControl>

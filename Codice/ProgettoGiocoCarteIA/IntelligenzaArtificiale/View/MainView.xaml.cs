@@ -78,7 +78,7 @@ namespace IntelligenzaArtificiale.View
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if(color0.IsChecked.Value)
+            if (color0.IsChecked.Value)
                 cardInGame[0] = color0.Content.ToString();
             else if(color1.IsChecked.Value)
                 cardInGame[0] = color1.Content.ToString();
@@ -133,6 +133,26 @@ namespace IntelligenzaArtificiale.View
             }
             Save();
             combinations.RemoveRange(0, combinations.Count);
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            cardsMove.Text = "";
+            for (int i = 0; i < 7; i++)
+            {
+                Thread.Sleep(50);
+                cardAI[i] = new String[2];
+                RandomCardGenerator(i);
+            }
+            carta0.Text = cardAI[0][0] + " " + cardAI[0][1];
+            carta1.Text = cardAI[1][0] + " " + cardAI[1][1];
+            carta2.Text = cardAI[2][0] + " " + cardAI[2][1];
+            carta3.Text = cardAI[3][0] + " " + cardAI[3][1];
+            carta4.Text = cardAI[4][0] + " " + cardAI[4][1];
+            carta5.Text = cardAI[5][0] + " " + cardAI[5][1];
+            carta6.Text = cardAI[6][0] + " " + cardAI[6][1];
+            cardAICopy = (String[][])cardAI.Clone();
+            cardInGameCopy = (String[])cardInGame.Clone();
         }
     }
 }
