@@ -130,17 +130,6 @@ namespace ProgettoGiocoCarteIA.View
                 this.LearnedObjectsList.Items.Add(objectSignatureData.ObjectName);
             }
         }
-
-
-
-
-
-
-
-
-
-
-
         private void InitializeComboBox()
         {
             comboBox.ItemsSource = webCameraControl.GetVideoCaptureDevices();
