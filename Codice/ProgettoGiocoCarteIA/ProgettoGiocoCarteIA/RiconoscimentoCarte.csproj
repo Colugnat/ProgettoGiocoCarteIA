@@ -61,6 +61,9 @@
     <Reference Include="AForge.Math, Version=2.2.5.0, Culture=neutral, PublicKeyToken=abba2e25397ee8c9, processorArchitecture=MSIL">
       <HintPath>..\packages\AForge.Math.2.2.5\lib\AForge.Math.dll</HintPath>
     </Reference>
+    <Reference Include="IronOcr, Version=4.4.0.21181, Culture=neutral, PublicKeyToken=5f366048dc436899, processorArchitecture=MSIL">
+      <HintPath>..\packages\IronOcr.4.4.0\lib\net40\IronOcr.dll</HintPath>
+    </Reference>
     <Reference Include="Patagames.Ocr, Version=1.11.3.452, Culture=neutral, PublicKeyToken=be14d8e1fe46e570, processorArchitecture=MSIL">
       <HintPath>..\packages\Tesseract.Net.SDK.1.15.342\lib\net452\Patagames.Ocr.dll</HintPath>
     </Reference>
@@ -91,6 +94,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Helper\ColorConverter.cs" />
+    <Compile Include="Helper\ColorInformation.cs" />
+    <Compile Include="Helper\ObjectColorData.cs" />
+    <Compile Include="Helper\ObjectIdentificationService.cs" />
+    <Compile Include="Helper\ObjectLearningServices.cs" />
+    <Compile Include="Helper\ObjectMemoryService.cs" />
+    <Compile Include="Helper\ObjectSignatureData.cs" />
+    <Compile Include="Helper\PaletteAnalyzer.cs" />
     <Compile Include="View\MainView.xaml.cs">
       <DependentUpon>MainView.xaml</DependentUpon>
     </Compile>
@@ -176,7 +187,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Helper\" />
     <Folder Include="Model\" />
     <Folder Include="Service\" />
     <Folder Include="ViewModel\" />
