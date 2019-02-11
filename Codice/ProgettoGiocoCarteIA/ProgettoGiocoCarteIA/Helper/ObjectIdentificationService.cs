@@ -10,7 +10,7 @@ namespace ObjectRecognition
     public class ObjectIdentificationService
     {
 
-        private const float AgreementCutoffPercent = 0.8f;
+        private const float AgreementCutoffPercent = 0.87f;
 
         public static IList<string> AnalyzeImage(BitmapImage imageToAnalyze)
         {

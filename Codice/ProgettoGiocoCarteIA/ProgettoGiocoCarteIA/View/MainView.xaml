@@ -7,33 +7,33 @@
              xmlns:wpf="clr-namespace:WebEye.Controls.Wpf;assembly=WebEye.Controls.Wpf.WebCameraControl"
              mc:Ignorable="d" 
              Height="440" Width="664.667" Loaded="Window_Loaded_1">
-    <!--<Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="10*"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="1" Grid.ColumnSpan="2" Margin="-12,0">
-            <ComboBox x:Name="comboBox" Width="100" DisplayMemberPath="Name" SelectionChanged="OnSelectionChanged" />
-            <Button x:Name="startButton" Content="Start" Width="75" IsEnabled="False" Click="OnStartButtonClick" />
-            <Button x:Name="stopButton" Content="Stop" Width="75" IsEnabled="{Binding Path=IsCapturing, ElementName=webCameraControl}" Click="OnStopButtonClick" />
-            <Button x:Name="imageButton" Content="Image..." Width="75" IsEnabled="{Binding Path=IsCapturing, ElementName=webCameraControl}" Click="OnImageButtonClick" />
-        </StackPanel>
-        <wpf:WebCameraControl x:Name="webCameraControl" Width="300" />
-    </Grid>-->
-
     <Grid>
         <TabControl HorizontalAlignment="Left" Height="363" Margin="10,10,0,0" VerticalAlignment="Top" Width="637">
+            <TabItem Header="Camera">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="10*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="1" Grid.ColumnSpan="2" Margin="-12,0">
+                        <ComboBox x:Name="comboBox" Width="100" DisplayMemberPath="Name" SelectionChanged="OnSelectionChanged" />
+                        <Button x:Name="startButton" Content="Start" Width="75" IsEnabled="False" Click="OnStartButtonClick" />
+                        <Button x:Name="stopButton" Content="Stop" Width="75" IsEnabled="{Binding Path=IsCapturing, ElementName=webCameraControl}" Click="OnStopButtonClick" />
+                    </StackPanel>
+                    <wpf:WebCameraControl x:Name="webCameraControl" Grid.ColumnSpan="2" />
+                </Grid>
+            </TabItem>
             <TabItem Header="Learning">
                 <Grid Background="#FFE5E5E5" Margin="0,0,0,-2">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="102*"/>
                         <ColumnDefinition Width="491*"/>
                     </Grid.ColumnDefinitions>
-                    <wpf:WebCameraControl x:Name="LearningImageOne" HorizontalAlignment="Left" Height="195" Margin="10,36,0,0" VerticalAlignment="Top" Width="219" Grid.ColumnSpan="2"/>
+                    <Image x:Name="LearningImageOne" HorizontalAlignment="Left" Height="195" Margin="10,36,0,0" VerticalAlignment="Top" Width="219" Grid.ColumnSpan="2"/>
                     <Image x:Name="LearningImageTwo" Grid.Column="1" HorizontalAlignment="Left" Height="193" Margin="135,38,0,0" VerticalAlignment="Top" Width="212"/>
                     <ListBox x:Name="LearnedObjectsList" Grid.Column="1" HorizontalAlignment="Left" Height="161" Margin="369,41,0,0" VerticalAlignment="Top" Width="136"/>
                     <Label Content="Background image" HorizontalAlignment="Left" Margin="8,10,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="157"/>
@@ -63,12 +63,5 @@
                 </Grid>
             </TabItem>
         </TabControl>
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="1" Grid.ColumnSpan="2" Margin="-12,0">
-            <ComboBox x:Name="comboBox" Width="143" DisplayMemberPath="Name" SelectionChanged="OnSelectionChanged" Margin="0,411,0,0" />
-            <Button x:Name="startButton" Content="Start" Width="75" IsEnabled="False" Click="OnStartButtonClick" Margin="0,411,0,0" />
-            <Button x:Name="stopButton" Content="Stop" Width="75" IsEnabled="{Binding Path=IsCapturing, ElementName=webCameraControl}" Click="OnStopButtonClick" Margin="0,411,0,0" />
-            
-        </StackPanel>
-        
     </Grid>
 </UserControl>

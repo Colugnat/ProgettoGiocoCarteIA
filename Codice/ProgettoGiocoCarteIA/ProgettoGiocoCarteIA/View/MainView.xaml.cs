@@ -1,21 +1,10 @@
-﻿
-using Microsoft.Win32;
-using System.Collections.Generic;
-using System.Drawing;
+﻿using System.Collections.Generic;
 using System.Drawing.Imaging;
 using System.Windows;
 using System.Windows.Controls;
 using WebEye.Controls.Wpf;
-
-using System;
-using System.Threading;
-using Patagames.Ocr;
-using Patagames.Ocr.Enums;
-using System.Linq;
 using System.Windows.Media.Imaging;
 using ObjectRecognition;
-using System.Windows.Interop;
-using System.Windows.Media;
 using System.IO;
 
 namespace ProgettoGiocoCarteIA.View
@@ -56,19 +45,19 @@ namespace ProgettoGiocoCarteIA.View
 
         private void LearningImageOneButton_Click(object sender, RoutedEventArgs e)
         {
-
-            backgroundImage = Convert(LearningImageOne.GetCurrentImage());
+            backgroundImage = Convert(webCameraControl.GetCurrentImage());
+            this.LearningImageOne.Source = backgroundImage;
         }
 
         private void LearningImageTwoButton_Click(object sender, RoutedEventArgs e)
         {
-            learningImage = Convert(LearningImageOne.GetCurrentImage());
+            learningImage = Convert(webCameraControl.GetCurrentImage());
             this.LearningImageTwo.Source = learningImage;
         }
 
         private void AnalyzeImageButton_Click(object sender, RoutedEventArgs e)
         {
-            identificationImage = Convert(LearningImageOne.GetCurrentImage());
+            identificationImage = Convert(webCameraControl.GetCurrentImage());
             this.AnalysisImage.Source = identificationImage;
         }
 
@@ -154,26 +143,27 @@ namespace ProgettoGiocoCarteIA.View
 
         private void InitializeComboBox()
         {
-            comboBox.ItemsSource = LearningImageOne.GetVideoCaptureDevices();
+            comboBox.ItemsSource = webCameraControl.GetVideoCaptureDevices();
 
             if (comboBox.Items.Count > 0)
             {
                 comboBox.SelectedItem = comboBox.Items[0];
             }
         }
-
         private void OnSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             startButton.IsEnabled = e.AddedItems.Count > 0;
         }
-
         private void OnStartButtonClick(object sender, RoutedEventArgs e)
         {
             var cameraId = (WebCameraId)comboBox.SelectedItem;
-            LearningImageOne.StartCapture(cameraId);
+            webCameraControl.StartCapture(cameraId);
 
         }
-
+        private void OnStopButtonClick(object sender, RoutedEventArgs e)
+        {
+            webCameraControl.StopCapture();
+        }
 
 
 
@@ -220,11 +210,6 @@ namespace ProgettoGiocoCarteIA.View
         //    }
         //    return finalNum.ToList().IndexOf(finalNum.Max());
         //}
-
-        private void OnStopButtonClick(object sender, RoutedEventArgs e)
-        {
-            LearningImageOne.StopCapture();
-        }
         //public Bitmap CropBitmap(Bitmap bitmap, int cropX, int cropY, int cropWidth, int cropHeight)
         //{
         //    Rectangle rect = new Rectangle(cropX, cropY, cropWidth, cropHeight);
