@@ -1,0 +1,1055 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebEye.Controls.Wpf.WebCameraControl.1.0.0.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:WebEye.Controls.Wpf.Fakes.ShimDirectShowException">
+            <summary>Tipo shim di WebEye.Controls.Wpf.DirectShowException</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.ShimDirectShowException.#ctor">
+            <summary>Inizializza una nuova istanza di shim</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.ShimDirectShowException.#ctor(WebEye.Controls.Wpf.DirectShowException)">
+            <summary>Inizializza un nuovo shim per l&apos;istanza specificata</summary>
+        </member>
+        <member name="T:WebEye.Controls.Wpf.Fakes.ShimDirectShowException.AllInstances">
+            <summary>Definisce gli shim per tutti i membri delle istanze</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.ShimDirectShowException.BehaveAsCurrent">
+            <summary>Assegna il comportamento &apos;Current&apos; per tutti i metodi del tipo sottoposto a shim</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.ShimDirectShowException.BehaveAsNotImplemented">
+            <summary>Assegna il comportamento &apos;NotImplemented&apos; per tutti i metodi del tipo sottoposto a shim</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimDirectShowException.Behavior">
+            <summary>Assegna il comportamento per tutti i metodi del tipo sottoposto a shim</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.ShimDirectShowException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Associa i membri dell&apos;interfaccia allo shim.</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimDirectShowException.ConstructorStringInt32">
+            <summary>Imposta shim di DirectShowException.DirectShowException(String message, Int32 hresult)</summary>
+        </member>
+        <member name="T:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl">
+            <summary>Tipo shim di WebEye.Controls.Wpf.WebCameraControl</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.#ctor">
+            <summary>Inizializza una nuova istanza di shim</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.#ctor(WebEye.Controls.Wpf.WebCameraControl)">
+            <summary>Inizializza un nuovo shim per l&apos;istanza specificata</summary>
+        </member>
+        <member name="T:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.AllInstances">
+            <summary>Definisce gli shim per tutti i membri delle istanze</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.AllInstances.GetCurrentImage">
+            <summary>Imposta shim di WebCameraControl.GetCurrentImage()</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.AllInstances.GetVideoCaptureDevices">
+            <summary>Imposta shim di WebCameraControl.GetVideoCaptureDevices()</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.AllInstances.HandleControlLoadedObjectRoutedEventArgs">
+            <summary>Imposta shim di WebCameraControl.HandleControlLoaded(Object sender, RoutedEventArgs e)</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.AllInstances.HandleWindowClosedObjectEventArgs">
+            <summary>Imposta shim di WebCameraControl.HandleWindowClosed(Object sender, EventArgs eventArgs)</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.AllInstances.InitializeCaptureGraph">
+            <summary>Imposta shim di WebCameraControl.InitializeCaptureGraph()</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.AllInstances.InitializeComponent">
+            <summary>Imposta shim di WebCameraControl.InitializeComponent()</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.AllInstances.IsCapturingGet">
+            <summary>Imposta shim di WebCameraControl.get_IsCapturing()</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.AllInstances.IsCapturingSetBoolean">
+            <summary>Imposta shim di WebCameraControl.set_IsCapturing(Boolean value)</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.AllInstances.OnContentChangedObjectObject">
+            <summary>Imposta shim di WebCameraControl.OnContentChanged(Object oldContent, Object newContent)</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.AllInstances.StartCaptureWebCameraId">
+            <summary>Imposta shim di WebCameraControl.StartCapture(WebCameraId camera)</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.AllInstances.StopCapture">
+            <summary>Imposta shim di WebCameraControl.StopCapture()</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.AllInstances.SystemWindowsMarkupIComponentConnectorConnectInt32Object">
+            <summary>Imposta shim di WebCameraControl.System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.AllInstances.VideoSizeGet">
+            <summary>Imposta shim di WebCameraControl.get_VideoSize()</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.AllInstances._CreateDelegateTypeString">
+            <summary>Imposta shim di WebCameraControl._CreateDelegate(Type delegateType, String handler)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.BehaveAsCurrent">
+            <summary>Assegna il comportamento &apos;Current&apos; per tutti i metodi del tipo sottoposto a shim</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.BehaveAsNotImplemented">
+            <summary>Assegna il comportamento &apos;NotImplemented&apos; per tutti i metodi del tipo sottoposto a shim</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.Behavior">
+            <summary>Assegna il comportamento per tutti i metodi del tipo sottoposto a shim</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.Bind(System.Windows.IInputElement)">
+            <summary>Associa i membri dell&apos;interfaccia allo shim.</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.Bind(System.Windows.Markup.IAddChild)">
+            <summary>Associa i membri dell&apos;interfaccia allo shim.</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.Bind(System.Windows.Media.Animation.IAnimatable)">
+            <summary>Associa i membri dell&apos;interfaccia allo shim.</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.Bind(System.Windows.IFrameworkInputElement)">
+            <summary>Associa i membri dell&apos;interfaccia allo shim.</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.Bind(System.ComponentModel.ISupportInitialize)">
+            <summary>Associa i membri dell&apos;interfaccia allo shim.</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.Bind(System.Windows.Markup.IComponentConnector)">
+            <summary>Associa i membri dell&apos;interfaccia allo shim.</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.Bind(System.Windows.Markup.IQueryAmbient)">
+            <summary>Associa i membri dell&apos;interfaccia allo shim.</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.Constructor">
+            <summary>Imposta shim di WebCameraControl.WebCameraControl()</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.GetCurrentImage">
+            <summary>Imposta shim di WebCameraControl.GetCurrentImage()</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.GetVideoCaptureDevices">
+            <summary>Imposta shim di WebCameraControl.GetVideoCaptureDevices()</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.HandleControlLoadedObjectRoutedEventArgs">
+            <summary>Imposta shim di WebCameraControl.HandleControlLoaded(Object sender, RoutedEventArgs e)</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.HandleWindowClosedObjectEventArgs">
+            <summary>Imposta shim di WebCameraControl.HandleWindowClosed(Object sender, EventArgs eventArgs)</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.InitializeCaptureGraph">
+            <summary>Imposta shim di WebCameraControl.InitializeCaptureGraph()</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.InitializeComponent">
+            <summary>Imposta shim di WebCameraControl.InitializeComponent()</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.IsCapturingGet">
+            <summary>Imposta shim di WebCameraControl.get_IsCapturing()</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.IsCapturingSetBoolean">
+            <summary>Imposta shim di WebCameraControl.set_IsCapturing(Boolean value)</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.OnContentChangedObjectObject">
+            <summary>Imposta shim di WebCameraControl.OnContentChanged(Object oldContent, Object newContent)</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.StartCaptureWebCameraId">
+            <summary>Imposta shim di WebCameraControl.StartCapture(WebCameraId camera)</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.StaticConstructor">
+            <summary>Imposta shim di WebCameraControl.WebCameraControl()</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.StopCapture">
+            <summary>Imposta shim di WebCameraControl.StopCapture()</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.SystemWindowsMarkupIComponentConnectorConnectInt32Object">
+            <summary>Imposta shim di WebCameraControl.System.Windows.Markup.IComponentConnector.Connect(Int32 connectionId, Object target)</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl.VideoSizeGet">
+            <summary>Imposta shim di WebCameraControl.get_VideoSize()</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraControl._CreateDelegateTypeString">
+            <summary>Imposta shim di WebCameraControl._CreateDelegate(Type delegateType, String handler)</summary>
+        </member>
+        <member name="T:WebEye.Controls.Wpf.Fakes.ShimWebCameraId">
+            <summary>Tipo shim di WebEye.Controls.Wpf.WebCameraId</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.ShimWebCameraId.#ctor">
+            <summary>Inizializza una nuova istanza di shim</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.ShimWebCameraId.#ctor(WebEye.Controls.Wpf.WebCameraId)">
+            <summary>Inizializza un nuovo shim per l&apos;istanza specificata</summary>
+        </member>
+        <member name="T:WebEye.Controls.Wpf.Fakes.ShimWebCameraId.AllInstances">
+            <summary>Definisce gli shim per tutti i membri delle istanze</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraId.AllInstances.DevicePathGet">
+            <summary>Imposta shim di WebCameraId.get_DevicePath()</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraId.AllInstances.DevicePathSetString">
+            <summary>Imposta shim di WebCameraId.set_DevicePath(String value)</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraId.AllInstances.EqualsObject">
+            <summary>Imposta shim di WebCameraId.Equals(Object obj)</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraId.AllInstances.EqualsWebCameraId">
+            <summary>Imposta shim di WebCameraId.Equals(WebCameraId other)</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraId.AllInstances.GetHashCode01">
+            <summary>Imposta shim di WebCameraId.GetHashCode()</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraId.AllInstances.NameGet">
+            <summary>Imposta shim di WebCameraId.get_Name()</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraId.AllInstances.NameSetString">
+            <summary>Imposta shim di WebCameraId.set_Name(String value)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.ShimWebCameraId.BehaveAsCurrent">
+            <summary>Assegna il comportamento &apos;Current&apos; per tutti i metodi del tipo sottoposto a shim</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.ShimWebCameraId.BehaveAsNotImplemented">
+            <summary>Assegna il comportamento &apos;NotImplemented&apos; per tutti i metodi del tipo sottoposto a shim</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraId.Behavior">
+            <summary>Assegna il comportamento per tutti i metodi del tipo sottoposto a shim</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.ShimWebCameraId.Bind(System.IEquatable{WebEye.Controls.Wpf.WebCameraId})">
+            <summary>Associa i membri dell&apos;interfaccia allo shim.</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraId.DevicePathGet">
+            <summary>Imposta shim di WebCameraId.get_DevicePath()</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraId.DevicePathSetString">
+            <summary>Imposta shim di WebCameraId.set_DevicePath(String value)</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraId.EqualityOpWebCameraIdWebCameraId">
+            <summary>Imposta shim di WebCameraId.op_Equality(WebCameraId left, WebCameraId right)</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraId.EqualsObject">
+            <summary>Imposta shim di WebCameraId.Equals(Object obj)</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraId.EqualsWebCameraId">
+            <summary>Imposta shim di WebCameraId.Equals(WebCameraId other)</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraId.GetHashCode">
+            <summary>Imposta shim di WebCameraId.GetHashCode()</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraId.InequalityOpWebCameraIdWebCameraId">
+            <summary>Imposta shim di WebCameraId.op_Inequality(WebCameraId left, WebCameraId right)</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraId.NameGet">
+            <summary>Imposta shim di WebCameraId.get_Name()</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.ShimWebCameraId.NameSetString">
+            <summary>Imposta shim di WebCameraId.set_Name(String value)</summary>
+        </member>
+        <member name="T:WebEye.Controls.Wpf.Fakes.StubWebCameraControl">
+            <summary>Tipo stub di WebEye.Controls.Wpf.WebCameraControl</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.#ctor">
+            <summary>Inizializza una nuova istanza</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.AddChild(System.Object)">
+            <summary>Imposta stub di ContentControl.AddChild(Object value)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.AddChildObject">
+            <summary>Imposta stub di ContentControl.AddChild(Object value)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.AddText(System.String)">
+            <summary>Imposta stub di ContentControl.AddText(String text)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.AddTextString">
+            <summary>Imposta stub di ContentControl.AddText(String text)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.ArrangeOverride(System.Windows.Size)">
+            <summary>Imposta stub di Control.ArrangeOverride(Size arrangeBounds)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.ArrangeOverrideSize">
+            <summary>Imposta stub di Control.ArrangeOverride(Size arrangeBounds)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.BeginInit">
+            <summary>Imposta stub di FrameworkElement.BeginInit()</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.BeginInit01">
+            <summary>Imposta stub di FrameworkElement.BeginInit()</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.CallBase">
+            <summary>Ottiene o imposta un valore indicante se deve essere chiamato il metodo di base anziché il comportamento di fallback</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.EndInit">
+            <summary>Imposta stub di FrameworkElement.EndInit()</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.EndInit01">
+            <summary>Imposta stub di FrameworkElement.EndInit()</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.GetLayoutClip(System.Windows.Size)">
+            <summary>Imposta stub di FrameworkElement.GetLayoutClip(Size layoutSlotSize)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.GetLayoutClipSize">
+            <summary>Imposta stub di FrameworkElement.GetLayoutClip(Size layoutSlotSize)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.GetUIParentCore">
+            <summary>Imposta stub di FrameworkElement.GetUIParentCore()</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.GetUIParentCore01">
+            <summary>Imposta stub di FrameworkElement.GetUIParentCore()</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.GetVisualChild(System.Int32)">
+            <summary>Imposta stub di FrameworkElement.GetVisualChild(Int32 index)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.GetVisualChildInt32">
+            <summary>Imposta stub di FrameworkElement.GetVisualChild(Int32 index)</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.HandlesScrolling">
+            <summary>Imposta stub di Control.get_HandlesScrolling()</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.HandlesScrollingGet">
+            <summary>Imposta stub di Control.get_HandlesScrolling()</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.HasEffectiveKeyboardFocus">
+            <summary>Imposta stub di UIElement.get_HasEffectiveKeyboardFocus()</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.HasEffectiveKeyboardFocusGet">
+            <summary>Imposta stub di UIElement.get_HasEffectiveKeyboardFocus()</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.HitTestCore(System.Windows.Media.GeometryHitTestParameters)">
+            <summary>Imposta stub di UIElement.HitTestCore(GeometryHitTestParameters hitTestParameters)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.HitTestCore(System.Windows.Media.PointHitTestParameters)">
+            <summary>Imposta stub di UIElement.HitTestCore(PointHitTestParameters hitTestParameters)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.HitTestCoreGeometryHitTestParameters">
+            <summary>Imposta stub di UIElement.HitTestCore(GeometryHitTestParameters hitTestParameters)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.HitTestCorePointHitTestParameters">
+            <summary>Imposta stub di UIElement.HitTestCore(PointHitTestParameters hitTestParameters)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.InitializeStub">
+            <summary>Inizializza una nuova istanza di type StubWebCameraControl</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.InstanceBehavior">
+            <summary>Ottiene o imposta il comportamento dell&apos;istanza.</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.InstanceObserver">
+            <summary>Ottiene o imposta l&apos;osservatore dell&apos;istanza.</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.IsEnabledCore">
+            <summary>Imposta stub di UIElement.get_IsEnabledCore()</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.IsEnabledCoreGet">
+            <summary>Imposta stub di UIElement.get_IsEnabledCore()</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.LogicalChildren">
+            <summary>Imposta stub di ContentControl.get_LogicalChildren()</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.LogicalChildrenGet">
+            <summary>Imposta stub di ContentControl.get_LogicalChildren()</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.MeasureOverride(System.Windows.Size)">
+            <summary>Imposta stub di Control.MeasureOverride(Size constraint)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.MeasureOverrideSize">
+            <summary>Imposta stub di Control.MeasureOverride(Size constraint)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnAccessKey(System.Windows.Input.AccessKeyEventArgs)">
+            <summary>Imposta stub di UIElement.OnAccessKey(AccessKeyEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnAccessKeyAccessKeyEventArgs">
+            <summary>Imposta stub di UIElement.OnAccessKey(AccessKeyEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnApplyTemplate">
+            <summary>Imposta stub di FrameworkElement.OnApplyTemplate()</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnApplyTemplate01">
+            <summary>Imposta stub di FrameworkElement.OnApplyTemplate()</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnChildDesiredSizeChanged(System.Windows.UIElement)">
+            <summary>Imposta stub di UIElement.OnChildDesiredSizeChanged(UIElement child)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnChildDesiredSizeChangedUIElement">
+            <summary>Imposta stub di UIElement.OnChildDesiredSizeChanged(UIElement child)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnContentChanged(System.Object,System.Object)">
+            <summary>Imposta stub di WebCameraControl.OnContentChanged(Object oldContent, Object newContent)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnContentChangedObjectObject">
+            <summary>Imposta stub di WebCameraControl.OnContentChanged(Object oldContent, Object newContent)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnContentStringFormatChanged(System.String,System.String)">
+            <summary>Imposta stub di ContentControl.OnContentStringFormatChanged(String oldContentStringFormat, String newContentStringFormat)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnContentStringFormatChangedStringString">
+            <summary>Imposta stub di ContentControl.OnContentStringFormatChanged(String oldContentStringFormat, String newContentStringFormat)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnContentTemplateChanged(System.Windows.DataTemplate,System.Windows.DataTemplate)">
+            <summary>Imposta stub di ContentControl.OnContentTemplateChanged(DataTemplate oldContentTemplate, DataTemplate newContentTemplate)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnContentTemplateChangedDataTemplateDataTemplate">
+            <summary>Imposta stub di ContentControl.OnContentTemplateChanged(DataTemplate oldContentTemplate, DataTemplate newContentTemplate)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnContentTemplateSelectorChanged(System.Windows.Controls.DataTemplateSelector,System.Windows.Controls.DataTemplateSelector)">
+            <summary>Imposta stub di ContentControl.OnContentTemplateSelectorChanged(DataTemplateSelector oldContentTemplateSelector, DataTemplateSelector newContentTemplateSelector)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnContentTemplateSelectorChangedDataTemplateSelectorDataTemplateSelector">
+            <summary>Imposta stub di ContentControl.OnContentTemplateSelectorChanged(DataTemplateSelector oldContentTemplateSelector, DataTemplateSelector newContentTemplateSelector)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnContextMenuClosing(System.Windows.Controls.ContextMenuEventArgs)">
+            <summary>Imposta stub di FrameworkElement.OnContextMenuClosing(ContextMenuEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnContextMenuClosingContextMenuEventArgs">
+            <summary>Imposta stub di FrameworkElement.OnContextMenuClosing(ContextMenuEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnContextMenuOpening(System.Windows.Controls.ContextMenuEventArgs)">
+            <summary>Imposta stub di FrameworkElement.OnContextMenuOpening(ContextMenuEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnContextMenuOpeningContextMenuEventArgs">
+            <summary>Imposta stub di FrameworkElement.OnContextMenuOpening(ContextMenuEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnCreateAutomationPeer">
+            <summary>Imposta stub di UserControl.OnCreateAutomationPeer()</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnCreateAutomationPeer01">
+            <summary>Imposta stub di UserControl.OnCreateAutomationPeer()</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnDragEnter(System.Windows.DragEventArgs)">
+            <summary>Imposta stub di UIElement.OnDragEnter(DragEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnDragEnterDragEventArgs">
+            <summary>Imposta stub di UIElement.OnDragEnter(DragEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnDragLeave(System.Windows.DragEventArgs)">
+            <summary>Imposta stub di UIElement.OnDragLeave(DragEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnDragLeaveDragEventArgs">
+            <summary>Imposta stub di UIElement.OnDragLeave(DragEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnDragOver(System.Windows.DragEventArgs)">
+            <summary>Imposta stub di UIElement.OnDragOver(DragEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnDragOverDragEventArgs">
+            <summary>Imposta stub di UIElement.OnDragOver(DragEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnDrop(System.Windows.DragEventArgs)">
+            <summary>Imposta stub di UIElement.OnDrop(DragEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnDropDragEventArgs">
+            <summary>Imposta stub di UIElement.OnDrop(DragEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnGiveFeedback(System.Windows.GiveFeedbackEventArgs)">
+            <summary>Imposta stub di UIElement.OnGiveFeedback(GiveFeedbackEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnGiveFeedbackGiveFeedbackEventArgs">
+            <summary>Imposta stub di UIElement.OnGiveFeedback(GiveFeedbackEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnGotFocus(System.Windows.RoutedEventArgs)">
+            <summary>Imposta stub di FrameworkElement.OnGotFocus(RoutedEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnGotFocusRoutedEventArgs">
+            <summary>Imposta stub di FrameworkElement.OnGotFocus(RoutedEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnGotKeyboardFocus(System.Windows.Input.KeyboardFocusChangedEventArgs)">
+            <summary>Imposta stub di UIElement.OnGotKeyboardFocus(KeyboardFocusChangedEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnGotKeyboardFocusKeyboardFocusChangedEventArgs">
+            <summary>Imposta stub di UIElement.OnGotKeyboardFocus(KeyboardFocusChangedEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnGotMouseCapture(System.Windows.Input.MouseEventArgs)">
+            <summary>Imposta stub di UIElement.OnGotMouseCapture(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnGotMouseCaptureMouseEventArgs">
+            <summary>Imposta stub di UIElement.OnGotMouseCapture(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnGotStylusCapture(System.Windows.Input.StylusEventArgs)">
+            <summary>Imposta stub di UIElement.OnGotStylusCapture(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnGotStylusCaptureStylusEventArgs">
+            <summary>Imposta stub di UIElement.OnGotStylusCapture(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnGotTouchCapture(System.Windows.Input.TouchEventArgs)">
+            <summary>Imposta stub di UIElement.OnGotTouchCapture(TouchEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnGotTouchCaptureTouchEventArgs">
+            <summary>Imposta stub di UIElement.OnGotTouchCapture(TouchEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnInitialized(System.EventArgs)">
+            <summary>Imposta stub di FrameworkElement.OnInitialized(EventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnInitializedEventArgs">
+            <summary>Imposta stub di FrameworkElement.OnInitialized(EventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnIsKeyboardFocusWithinChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>Imposta stub di UIElement.OnIsKeyboardFocusWithinChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnIsKeyboardFocusWithinChangedDependencyPropertyChangedEventArgs">
+            <summary>Imposta stub di UIElement.OnIsKeyboardFocusWithinChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnIsKeyboardFocusedChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>Imposta stub di UIElement.OnIsKeyboardFocusedChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnIsKeyboardFocusedChangedDependencyPropertyChangedEventArgs">
+            <summary>Imposta stub di UIElement.OnIsKeyboardFocusedChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnIsMouseCaptureWithinChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>Imposta stub di UIElement.OnIsMouseCaptureWithinChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnIsMouseCaptureWithinChangedDependencyPropertyChangedEventArgs">
+            <summary>Imposta stub di UIElement.OnIsMouseCaptureWithinChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnIsMouseCapturedChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>Imposta stub di UIElement.OnIsMouseCapturedChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnIsMouseCapturedChangedDependencyPropertyChangedEventArgs">
+            <summary>Imposta stub di UIElement.OnIsMouseCapturedChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnIsMouseDirectlyOverChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>Imposta stub di UIElement.OnIsMouseDirectlyOverChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnIsMouseDirectlyOverChangedDependencyPropertyChangedEventArgs">
+            <summary>Imposta stub di UIElement.OnIsMouseDirectlyOverChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnIsStylusCaptureWithinChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>Imposta stub di UIElement.OnIsStylusCaptureWithinChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnIsStylusCaptureWithinChangedDependencyPropertyChangedEventArgs">
+            <summary>Imposta stub di UIElement.OnIsStylusCaptureWithinChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnIsStylusCapturedChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>Imposta stub di UIElement.OnIsStylusCapturedChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnIsStylusCapturedChangedDependencyPropertyChangedEventArgs">
+            <summary>Imposta stub di UIElement.OnIsStylusCapturedChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnIsStylusDirectlyOverChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>Imposta stub di UIElement.OnIsStylusDirectlyOverChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnIsStylusDirectlyOverChangedDependencyPropertyChangedEventArgs">
+            <summary>Imposta stub di UIElement.OnIsStylusDirectlyOverChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnKeyDown(System.Windows.Input.KeyEventArgs)">
+            <summary>Imposta stub di UIElement.OnKeyDown(KeyEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnKeyDownKeyEventArgs">
+            <summary>Imposta stub di UIElement.OnKeyDown(KeyEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnKeyUp(System.Windows.Input.KeyEventArgs)">
+            <summary>Imposta stub di UIElement.OnKeyUp(KeyEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnKeyUpKeyEventArgs">
+            <summary>Imposta stub di UIElement.OnKeyUp(KeyEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnLostFocus(System.Windows.RoutedEventArgs)">
+            <summary>Imposta stub di UIElement.OnLostFocus(RoutedEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnLostFocusRoutedEventArgs">
+            <summary>Imposta stub di UIElement.OnLostFocus(RoutedEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnLostKeyboardFocus(System.Windows.Input.KeyboardFocusChangedEventArgs)">
+            <summary>Imposta stub di UIElement.OnLostKeyboardFocus(KeyboardFocusChangedEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnLostKeyboardFocusKeyboardFocusChangedEventArgs">
+            <summary>Imposta stub di UIElement.OnLostKeyboardFocus(KeyboardFocusChangedEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnLostMouseCapture(System.Windows.Input.MouseEventArgs)">
+            <summary>Imposta stub di UIElement.OnLostMouseCapture(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnLostMouseCaptureMouseEventArgs">
+            <summary>Imposta stub di UIElement.OnLostMouseCapture(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnLostStylusCapture(System.Windows.Input.StylusEventArgs)">
+            <summary>Imposta stub di UIElement.OnLostStylusCapture(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnLostStylusCaptureStylusEventArgs">
+            <summary>Imposta stub di UIElement.OnLostStylusCapture(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnLostTouchCapture(System.Windows.Input.TouchEventArgs)">
+            <summary>Imposta stub di UIElement.OnLostTouchCapture(TouchEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnLostTouchCaptureTouchEventArgs">
+            <summary>Imposta stub di UIElement.OnLostTouchCapture(TouchEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnManipulationBoundaryFeedback(System.Windows.Input.ManipulationBoundaryFeedbackEventArgs)">
+            <summary>Imposta stub di UIElement.OnManipulationBoundaryFeedback(ManipulationBoundaryFeedbackEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnManipulationBoundaryFeedbackManipulationBoundaryFeedbackEventArgs">
+            <summary>Imposta stub di UIElement.OnManipulationBoundaryFeedback(ManipulationBoundaryFeedbackEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnManipulationCompleted(System.Windows.Input.ManipulationCompletedEventArgs)">
+            <summary>Imposta stub di UIElement.OnManipulationCompleted(ManipulationCompletedEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnManipulationCompletedManipulationCompletedEventArgs">
+            <summary>Imposta stub di UIElement.OnManipulationCompleted(ManipulationCompletedEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnManipulationDelta(System.Windows.Input.ManipulationDeltaEventArgs)">
+            <summary>Imposta stub di UIElement.OnManipulationDelta(ManipulationDeltaEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnManipulationDeltaManipulationDeltaEventArgs">
+            <summary>Imposta stub di UIElement.OnManipulationDelta(ManipulationDeltaEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnManipulationInertiaStarting(System.Windows.Input.ManipulationInertiaStartingEventArgs)">
+            <summary>Imposta stub di UIElement.OnManipulationInertiaStarting(ManipulationInertiaStartingEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnManipulationInertiaStartingManipulationInertiaStartingEventArgs">
+            <summary>Imposta stub di UIElement.OnManipulationInertiaStarting(ManipulationInertiaStartingEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnManipulationStarted(System.Windows.Input.ManipulationStartedEventArgs)">
+            <summary>Imposta stub di UIElement.OnManipulationStarted(ManipulationStartedEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnManipulationStartedManipulationStartedEventArgs">
+            <summary>Imposta stub di UIElement.OnManipulationStarted(ManipulationStartedEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnManipulationStarting(System.Windows.Input.ManipulationStartingEventArgs)">
+            <summary>Imposta stub di UIElement.OnManipulationStarting(ManipulationStartingEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnManipulationStartingManipulationStartingEventArgs">
+            <summary>Imposta stub di UIElement.OnManipulationStarting(ManipulationStartingEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnMouseDoubleClick(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Imposta stub di Control.OnMouseDoubleClick(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnMouseDoubleClickMouseButtonEventArgs">
+            <summary>Imposta stub di Control.OnMouseDoubleClick(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnMouseDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Imposta stub di UIElement.OnMouseDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnMouseDownMouseButtonEventArgs">
+            <summary>Imposta stub di UIElement.OnMouseDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnMouseEnter(System.Windows.Input.MouseEventArgs)">
+            <summary>Imposta stub di UIElement.OnMouseEnter(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnMouseEnterMouseEventArgs">
+            <summary>Imposta stub di UIElement.OnMouseEnter(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnMouseLeave(System.Windows.Input.MouseEventArgs)">
+            <summary>Imposta stub di UIElement.OnMouseLeave(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnMouseLeaveMouseEventArgs">
+            <summary>Imposta stub di UIElement.OnMouseLeave(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Imposta stub di UIElement.OnMouseLeftButtonDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnMouseLeftButtonDownMouseButtonEventArgs">
+            <summary>Imposta stub di UIElement.OnMouseLeftButtonDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnMouseLeftButtonUp(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Imposta stub di UIElement.OnMouseLeftButtonUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnMouseLeftButtonUpMouseButtonEventArgs">
+            <summary>Imposta stub di UIElement.OnMouseLeftButtonUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnMouseMove(System.Windows.Input.MouseEventArgs)">
+            <summary>Imposta stub di UIElement.OnMouseMove(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnMouseMoveMouseEventArgs">
+            <summary>Imposta stub di UIElement.OnMouseMove(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnMouseRightButtonDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Imposta stub di UIElement.OnMouseRightButtonDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnMouseRightButtonDownMouseButtonEventArgs">
+            <summary>Imposta stub di UIElement.OnMouseRightButtonDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnMouseRightButtonUp(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Imposta stub di UIElement.OnMouseRightButtonUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnMouseRightButtonUpMouseButtonEventArgs">
+            <summary>Imposta stub di UIElement.OnMouseRightButtonUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnMouseUp(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Imposta stub di UIElement.OnMouseUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnMouseUpMouseButtonEventArgs">
+            <summary>Imposta stub di UIElement.OnMouseUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnMouseWheel(System.Windows.Input.MouseWheelEventArgs)">
+            <summary>Imposta stub di UIElement.OnMouseWheel(MouseWheelEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnMouseWheelMouseWheelEventArgs">
+            <summary>Imposta stub di UIElement.OnMouseWheel(MouseWheelEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewDragEnter(System.Windows.DragEventArgs)">
+            <summary>Imposta stub di UIElement.OnPreviewDragEnter(DragEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewDragEnterDragEventArgs">
+            <summary>Imposta stub di UIElement.OnPreviewDragEnter(DragEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewDragLeave(System.Windows.DragEventArgs)">
+            <summary>Imposta stub di UIElement.OnPreviewDragLeave(DragEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewDragLeaveDragEventArgs">
+            <summary>Imposta stub di UIElement.OnPreviewDragLeave(DragEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewDragOver(System.Windows.DragEventArgs)">
+            <summary>Imposta stub di UIElement.OnPreviewDragOver(DragEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewDragOverDragEventArgs">
+            <summary>Imposta stub di UIElement.OnPreviewDragOver(DragEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewDrop(System.Windows.DragEventArgs)">
+            <summary>Imposta stub di UIElement.OnPreviewDrop(DragEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewDropDragEventArgs">
+            <summary>Imposta stub di UIElement.OnPreviewDrop(DragEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewGiveFeedback(System.Windows.GiveFeedbackEventArgs)">
+            <summary>Imposta stub di UIElement.OnPreviewGiveFeedback(GiveFeedbackEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewGiveFeedbackGiveFeedbackEventArgs">
+            <summary>Imposta stub di UIElement.OnPreviewGiveFeedback(GiveFeedbackEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewGotKeyboardFocus(System.Windows.Input.KeyboardFocusChangedEventArgs)">
+            <summary>Imposta stub di UIElement.OnPreviewGotKeyboardFocus(KeyboardFocusChangedEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewGotKeyboardFocusKeyboardFocusChangedEventArgs">
+            <summary>Imposta stub di UIElement.OnPreviewGotKeyboardFocus(KeyboardFocusChangedEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewKeyDown(System.Windows.Input.KeyEventArgs)">
+            <summary>Imposta stub di UIElement.OnPreviewKeyDown(KeyEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewKeyDownKeyEventArgs">
+            <summary>Imposta stub di UIElement.OnPreviewKeyDown(KeyEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewKeyUp(System.Windows.Input.KeyEventArgs)">
+            <summary>Imposta stub di UIElement.OnPreviewKeyUp(KeyEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewKeyUpKeyEventArgs">
+            <summary>Imposta stub di UIElement.OnPreviewKeyUp(KeyEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewLostKeyboardFocus(System.Windows.Input.KeyboardFocusChangedEventArgs)">
+            <summary>Imposta stub di UIElement.OnPreviewLostKeyboardFocus(KeyboardFocusChangedEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewLostKeyboardFocusKeyboardFocusChangedEventArgs">
+            <summary>Imposta stub di UIElement.OnPreviewLostKeyboardFocus(KeyboardFocusChangedEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewMouseDoubleClick(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Imposta stub di Control.OnPreviewMouseDoubleClick(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewMouseDoubleClickMouseButtonEventArgs">
+            <summary>Imposta stub di Control.OnPreviewMouseDoubleClick(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewMouseDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Imposta stub di UIElement.OnPreviewMouseDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewMouseDownMouseButtonEventArgs">
+            <summary>Imposta stub di UIElement.OnPreviewMouseDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Imposta stub di UIElement.OnPreviewMouseLeftButtonDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewMouseLeftButtonDownMouseButtonEventArgs">
+            <summary>Imposta stub di UIElement.OnPreviewMouseLeftButtonDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewMouseLeftButtonUp(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Imposta stub di UIElement.OnPreviewMouseLeftButtonUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewMouseLeftButtonUpMouseButtonEventArgs">
+            <summary>Imposta stub di UIElement.OnPreviewMouseLeftButtonUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewMouseMove(System.Windows.Input.MouseEventArgs)">
+            <summary>Imposta stub di UIElement.OnPreviewMouseMove(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewMouseMoveMouseEventArgs">
+            <summary>Imposta stub di UIElement.OnPreviewMouseMove(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewMouseRightButtonDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Imposta stub di UIElement.OnPreviewMouseRightButtonDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewMouseRightButtonDownMouseButtonEventArgs">
+            <summary>Imposta stub di UIElement.OnPreviewMouseRightButtonDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewMouseRightButtonUp(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Imposta stub di UIElement.OnPreviewMouseRightButtonUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewMouseRightButtonUpMouseButtonEventArgs">
+            <summary>Imposta stub di UIElement.OnPreviewMouseRightButtonUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewMouseUp(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Imposta stub di UIElement.OnPreviewMouseUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewMouseUpMouseButtonEventArgs">
+            <summary>Imposta stub di UIElement.OnPreviewMouseUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewMouseWheel(System.Windows.Input.MouseWheelEventArgs)">
+            <summary>Imposta stub di UIElement.OnPreviewMouseWheel(MouseWheelEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewMouseWheelMouseWheelEventArgs">
+            <summary>Imposta stub di UIElement.OnPreviewMouseWheel(MouseWheelEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewQueryContinueDrag(System.Windows.QueryContinueDragEventArgs)">
+            <summary>Imposta stub di UIElement.OnPreviewQueryContinueDrag(QueryContinueDragEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewQueryContinueDragQueryContinueDragEventArgs">
+            <summary>Imposta stub di UIElement.OnPreviewQueryContinueDrag(QueryContinueDragEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewStylusButtonDown(System.Windows.Input.StylusButtonEventArgs)">
+            <summary>Imposta stub di UIElement.OnPreviewStylusButtonDown(StylusButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewStylusButtonDownStylusButtonEventArgs">
+            <summary>Imposta stub di UIElement.OnPreviewStylusButtonDown(StylusButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewStylusButtonUp(System.Windows.Input.StylusButtonEventArgs)">
+            <summary>Imposta stub di UIElement.OnPreviewStylusButtonUp(StylusButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewStylusButtonUpStylusButtonEventArgs">
+            <summary>Imposta stub di UIElement.OnPreviewStylusButtonUp(StylusButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewStylusDown(System.Windows.Input.StylusDownEventArgs)">
+            <summary>Imposta stub di UIElement.OnPreviewStylusDown(StylusDownEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewStylusDownStylusDownEventArgs">
+            <summary>Imposta stub di UIElement.OnPreviewStylusDown(StylusDownEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewStylusInAirMove(System.Windows.Input.StylusEventArgs)">
+            <summary>Imposta stub di UIElement.OnPreviewStylusInAirMove(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewStylusInAirMoveStylusEventArgs">
+            <summary>Imposta stub di UIElement.OnPreviewStylusInAirMove(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewStylusInRange(System.Windows.Input.StylusEventArgs)">
+            <summary>Imposta stub di UIElement.OnPreviewStylusInRange(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewStylusInRangeStylusEventArgs">
+            <summary>Imposta stub di UIElement.OnPreviewStylusInRange(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewStylusMove(System.Windows.Input.StylusEventArgs)">
+            <summary>Imposta stub di UIElement.OnPreviewStylusMove(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewStylusMoveStylusEventArgs">
+            <summary>Imposta stub di UIElement.OnPreviewStylusMove(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewStylusOutOfRange(System.Windows.Input.StylusEventArgs)">
+            <summary>Imposta stub di UIElement.OnPreviewStylusOutOfRange(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewStylusOutOfRangeStylusEventArgs">
+            <summary>Imposta stub di UIElement.OnPreviewStylusOutOfRange(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewStylusSystemGesture(System.Windows.Input.StylusSystemGestureEventArgs)">
+            <summary>Imposta stub di UIElement.OnPreviewStylusSystemGesture(StylusSystemGestureEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewStylusSystemGestureStylusSystemGestureEventArgs">
+            <summary>Imposta stub di UIElement.OnPreviewStylusSystemGesture(StylusSystemGestureEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewStylusUp(System.Windows.Input.StylusEventArgs)">
+            <summary>Imposta stub di UIElement.OnPreviewStylusUp(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewStylusUpStylusEventArgs">
+            <summary>Imposta stub di UIElement.OnPreviewStylusUp(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewTextInput(System.Windows.Input.TextCompositionEventArgs)">
+            <summary>Imposta stub di UIElement.OnPreviewTextInput(TextCompositionEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewTextInputTextCompositionEventArgs">
+            <summary>Imposta stub di UIElement.OnPreviewTextInput(TextCompositionEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewTouchDown(System.Windows.Input.TouchEventArgs)">
+            <summary>Imposta stub di UIElement.OnPreviewTouchDown(TouchEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewTouchDownTouchEventArgs">
+            <summary>Imposta stub di UIElement.OnPreviewTouchDown(TouchEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewTouchMove(System.Windows.Input.TouchEventArgs)">
+            <summary>Imposta stub di UIElement.OnPreviewTouchMove(TouchEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewTouchMoveTouchEventArgs">
+            <summary>Imposta stub di UIElement.OnPreviewTouchMove(TouchEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewTouchUp(System.Windows.Input.TouchEventArgs)">
+            <summary>Imposta stub di UIElement.OnPreviewTouchUp(TouchEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPreviewTouchUpTouchEventArgs">
+            <summary>Imposta stub di UIElement.OnPreviewTouchUp(TouchEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>Imposta stub di FrameworkElement.OnPropertyChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnPropertyChangedDependencyPropertyChangedEventArgs">
+            <summary>Imposta stub di FrameworkElement.OnPropertyChanged(DependencyPropertyChangedEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnQueryContinueDrag(System.Windows.QueryContinueDragEventArgs)">
+            <summary>Imposta stub di UIElement.OnQueryContinueDrag(QueryContinueDragEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnQueryContinueDragQueryContinueDragEventArgs">
+            <summary>Imposta stub di UIElement.OnQueryContinueDrag(QueryContinueDragEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnQueryCursor(System.Windows.Input.QueryCursorEventArgs)">
+            <summary>Imposta stub di UIElement.OnQueryCursor(QueryCursorEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnQueryCursorQueryCursorEventArgs">
+            <summary>Imposta stub di UIElement.OnQueryCursor(QueryCursorEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnRender(System.Windows.Media.DrawingContext)">
+            <summary>Imposta stub di UIElement.OnRender(DrawingContext drawingContext)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnRenderDrawingContext">
+            <summary>Imposta stub di UIElement.OnRender(DrawingContext drawingContext)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnRenderSizeChanged(System.Windows.SizeChangedInfo)">
+            <summary>Imposta stub di FrameworkElement.OnRenderSizeChanged(SizeChangedInfo sizeInfo)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnRenderSizeChangedSizeChangedInfo">
+            <summary>Imposta stub di FrameworkElement.OnRenderSizeChanged(SizeChangedInfo sizeInfo)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnStyleChanged(System.Windows.Style,System.Windows.Style)">
+            <summary>Imposta stub di FrameworkElement.OnStyleChanged(Style oldStyle, Style newStyle)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnStyleChangedStyleStyle">
+            <summary>Imposta stub di FrameworkElement.OnStyleChanged(Style oldStyle, Style newStyle)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnStylusButtonDown(System.Windows.Input.StylusButtonEventArgs)">
+            <summary>Imposta stub di UIElement.OnStylusButtonDown(StylusButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnStylusButtonDownStylusButtonEventArgs">
+            <summary>Imposta stub di UIElement.OnStylusButtonDown(StylusButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnStylusButtonUp(System.Windows.Input.StylusButtonEventArgs)">
+            <summary>Imposta stub di UIElement.OnStylusButtonUp(StylusButtonEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnStylusButtonUpStylusButtonEventArgs">
+            <summary>Imposta stub di UIElement.OnStylusButtonUp(StylusButtonEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnStylusDown(System.Windows.Input.StylusDownEventArgs)">
+            <summary>Imposta stub di UIElement.OnStylusDown(StylusDownEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnStylusDownStylusDownEventArgs">
+            <summary>Imposta stub di UIElement.OnStylusDown(StylusDownEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnStylusEnter(System.Windows.Input.StylusEventArgs)">
+            <summary>Imposta stub di UIElement.OnStylusEnter(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnStylusEnterStylusEventArgs">
+            <summary>Imposta stub di UIElement.OnStylusEnter(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnStylusInAirMove(System.Windows.Input.StylusEventArgs)">
+            <summary>Imposta stub di UIElement.OnStylusInAirMove(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnStylusInAirMoveStylusEventArgs">
+            <summary>Imposta stub di UIElement.OnStylusInAirMove(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnStylusInRange(System.Windows.Input.StylusEventArgs)">
+            <summary>Imposta stub di UIElement.OnStylusInRange(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnStylusInRangeStylusEventArgs">
+            <summary>Imposta stub di UIElement.OnStylusInRange(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnStylusLeave(System.Windows.Input.StylusEventArgs)">
+            <summary>Imposta stub di UIElement.OnStylusLeave(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnStylusLeaveStylusEventArgs">
+            <summary>Imposta stub di UIElement.OnStylusLeave(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnStylusMove(System.Windows.Input.StylusEventArgs)">
+            <summary>Imposta stub di UIElement.OnStylusMove(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnStylusMoveStylusEventArgs">
+            <summary>Imposta stub di UIElement.OnStylusMove(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnStylusOutOfRange(System.Windows.Input.StylusEventArgs)">
+            <summary>Imposta stub di UIElement.OnStylusOutOfRange(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnStylusOutOfRangeStylusEventArgs">
+            <summary>Imposta stub di UIElement.OnStylusOutOfRange(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnStylusSystemGesture(System.Windows.Input.StylusSystemGestureEventArgs)">
+            <summary>Imposta stub di UIElement.OnStylusSystemGesture(StylusSystemGestureEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnStylusSystemGestureStylusSystemGestureEventArgs">
+            <summary>Imposta stub di UIElement.OnStylusSystemGesture(StylusSystemGestureEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnStylusUp(System.Windows.Input.StylusEventArgs)">
+            <summary>Imposta stub di UIElement.OnStylusUp(StylusEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnStylusUpStylusEventArgs">
+            <summary>Imposta stub di UIElement.OnStylusUp(StylusEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnTemplateChanged(System.Windows.Controls.ControlTemplate,System.Windows.Controls.ControlTemplate)">
+            <summary>Imposta stub di Control.OnTemplateChanged(ControlTemplate oldTemplate, ControlTemplate newTemplate)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnTemplateChangedControlTemplateControlTemplate">
+            <summary>Imposta stub di Control.OnTemplateChanged(ControlTemplate oldTemplate, ControlTemplate newTemplate)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnTextInput(System.Windows.Input.TextCompositionEventArgs)">
+            <summary>Imposta stub di UIElement.OnTextInput(TextCompositionEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnTextInputTextCompositionEventArgs">
+            <summary>Imposta stub di UIElement.OnTextInput(TextCompositionEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnToolTipClosing(System.Windows.Controls.ToolTipEventArgs)">
+            <summary>Imposta stub di FrameworkElement.OnToolTipClosing(ToolTipEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnToolTipClosingToolTipEventArgs">
+            <summary>Imposta stub di FrameworkElement.OnToolTipClosing(ToolTipEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnToolTipOpening(System.Windows.Controls.ToolTipEventArgs)">
+            <summary>Imposta stub di FrameworkElement.OnToolTipOpening(ToolTipEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnToolTipOpeningToolTipEventArgs">
+            <summary>Imposta stub di FrameworkElement.OnToolTipOpening(ToolTipEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnTouchDown(System.Windows.Input.TouchEventArgs)">
+            <summary>Imposta stub di UIElement.OnTouchDown(TouchEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnTouchDownTouchEventArgs">
+            <summary>Imposta stub di UIElement.OnTouchDown(TouchEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnTouchEnter(System.Windows.Input.TouchEventArgs)">
+            <summary>Imposta stub di UIElement.OnTouchEnter(TouchEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnTouchEnterTouchEventArgs">
+            <summary>Imposta stub di UIElement.OnTouchEnter(TouchEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnTouchLeave(System.Windows.Input.TouchEventArgs)">
+            <summary>Imposta stub di UIElement.OnTouchLeave(TouchEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnTouchLeaveTouchEventArgs">
+            <summary>Imposta stub di UIElement.OnTouchLeave(TouchEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnTouchMove(System.Windows.Input.TouchEventArgs)">
+            <summary>Imposta stub di UIElement.OnTouchMove(TouchEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnTouchMoveTouchEventArgs">
+            <summary>Imposta stub di UIElement.OnTouchMove(TouchEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnTouchUp(System.Windows.Input.TouchEventArgs)">
+            <summary>Imposta stub di UIElement.OnTouchUp(TouchEventArgs e)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnTouchUpTouchEventArgs">
+            <summary>Imposta stub di UIElement.OnTouchUp(TouchEventArgs e)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnVisualChildrenChanged(System.Windows.DependencyObject,System.Windows.DependencyObject)">
+            <summary>Imposta stub di Visual.OnVisualChildrenChanged(DependencyObject visualAdded, DependencyObject visualRemoved)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnVisualChildrenChangedDependencyObjectDependencyObject">
+            <summary>Imposta stub di Visual.OnVisualChildrenChanged(DependencyObject visualAdded, DependencyObject visualRemoved)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnVisualParentChanged(System.Windows.DependencyObject)">
+            <summary>Imposta stub di FrameworkElement.OnVisualParentChanged(DependencyObject oldParent)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.OnVisualParentChangedDependencyObject">
+            <summary>Imposta stub di FrameworkElement.OnVisualParentChanged(DependencyObject oldParent)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.ParentLayoutInvalidated(System.Windows.UIElement)">
+            <summary>Imposta stub di FrameworkElement.ParentLayoutInvalidated(UIElement child)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.ParentLayoutInvalidatedUIElement">
+            <summary>Imposta stub di FrameworkElement.ParentLayoutInvalidated(UIElement child)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.ShouldSerializeContent">
+            <summary>Imposta stub di ContentControl.ShouldSerializeContent()</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.ShouldSerializeContent01">
+            <summary>Imposta stub di ContentControl.ShouldSerializeContent()</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.ShouldSerializeProperty(System.Windows.DependencyProperty)">
+            <summary>Imposta stub di DependencyObject.ShouldSerializeProperty(DependencyProperty dp)</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.ShouldSerializePropertyDependencyProperty">
+            <summary>Imposta stub di DependencyObject.ShouldSerializeProperty(DependencyProperty dp)</summary>
+        </member>
+        <member name="M:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.ToString">
+            <summary>Imposta stub di Control.ToString()</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.ToString01">
+            <summary>Imposta stub di Control.ToString()</summary>
+        </member>
+        <member name="P:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.VisualChildrenCount">
+            <summary>Imposta stub di FrameworkElement.get_VisualChildrenCount()</summary>
+        </member>
+        <member name="F:WebEye.Controls.Wpf.Fakes.StubWebCameraControl.VisualChildrenCountGet">
+            <summary>Imposta stub di FrameworkElement.get_VisualChildrenCount()</summary>
+        </member>
+    </members>
+</doc>

@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Ringo\Desktop\Progetti\Gioco carte IA\Codice\ProgettoGiocoCarteIA\GiocoCarteIA\App.xaml
-2702257237
+7665447117
 
-181005333706
-151313328921
-MainWindow.xaml;View\MainView.xaml;
+37959388978
+181168852201
+MainWindow.xaml;View\CameraView.xaml;View\GameIAView.xaml;View\GameUserView.xaml;View\MainView.xaml;View\SettingsView.xaml;View\StartGameView.xaml;
 
 True
 
