@@ -1,0 +1,92 @@
+﻿<UserControl x:Class="GiocoCarteIA.View.MainView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GiocoCarteIA.View"
+             xmlns:wpf="clr-namespace:WebEye.Controls.Wpf;assembly=WebEye.Controls.Wpf.WebCameraControl"
+             mc:Ignorable="d" 
+             Height="450" Width="700" Loaded="Window_Loaded_1">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TabControl>
+            <TabItem Header="Camera">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="10*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="1" Grid.ColumnSpan="2">
+                        <ComboBox x:Name="comboBox" Width="100" DisplayMemberPath="Name" SelectionChanged="OnSelectionChanged" />
+                        <Button x:Name="startButton" Content="Start" Width="75" IsEnabled="False" Click="OnStartButtonClick" />
+                        <Button x:Name="stopButton" Content="Stop" Width="75" IsEnabled="{Binding Path=IsCapturing, ElementName=webCameraControl}" Click="OnStopButtonClick" />
+                    </StackPanel>
+                    <wpf:WebCameraControl x:Name="webCameraControl" Grid.ColumnSpan="2" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Learning">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="LearningImageOne" Height="150"/>
+                    <Image x:Name="LearningImageTwo" Height="150" Grid.Column="1"/>
+                    <ListBox x:Name="LearnedObjectsList" Grid.Column="2" Width="136" Margin="0,30,0,150"/>
+                    <Label Content="Background image"/>
+                    <Label Content="Image with object to learn" Grid.Column="1"/>
+                    <Button x:Name="LearningImageOneButton" Content="Load Image" VerticalAlignment="Bottom" Height="20" Width="75" Click="LearningImageOneButton_Click" Margin="0,0,0,50"/>
+                    <Button x:Name="LearningImageTwoButton" Content="Load Image" Grid.Column="1" VerticalAlignment="Bottom" Height="20" Width="75" Click="LearningImageTwoButton_Click" Margin="0,0,0,50"/>
+                    <Label Content="Learned objects" Grid.Column="2"/>
+                    <Button x:Name="LearnObjectButton" Content="Learn" Grid.Column="2" VerticalAlignment="Bottom" Height="20" Width="75" Click="LearnObjectButton_Click" Margin="0,0,0,50"/>
+                    <Button x:Name="DeleteObjectButton" Content="Delete" Grid.Column="2" VerticalAlignment="Bottom" Height="20" Width="75" Click="DeleteObjectButton_Click" Margin="0,0,0,30"/>
+                    <TextBox x:Name="ObjectNameText" Grid.Column="2" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="140" Margin="0,0,0,75" />
+                    <Label Content="Name of object to learn" Grid.Column="2" VerticalAlignment="Bottom" Height="24" Margin="0,0,0,100"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Recognition">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock x:Name="AnalysisResultsText" TextWrapping="Wrap" Grid.Column="1" Height="190"/>
+                    <Label Content="What image recognizer finds" Grid.Column="1"/>
+                    <Label Content="Image to Analyze"/>
+                    <Button x:Name="AnalyzeButton" Content="Analyze Image" VerticalAlignment="Bottom" Margin="0,0,0,50" Grid.Column="1" Click="AnalyzeButton_Click" />
+                    <Button x:Name="AnalyzeImageButton" Content="Load Image" VerticalAlignment="Bottom" Margin="0,0,0,50" Click="AnalyzeImageButton_Click"/>
+                    <Image x:Name="AnalysisImage" Height="190"/>
+                    <Label Content="Possible move" Grid.Column="2"/>
+                    <TextBlock x:Name="cardsMove" TextWrapping="Wrap" Grid.Column="2" Height="190"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="carta0" Grid.Column="0"></TextBlock>
+            <TextBlock x:Name="carta1" Grid.Column="1"></TextBlock>
+            <TextBlock x:Name="carta2" Grid.Column="2"></TextBlock>
+            <TextBlock x:Name="carta3" Grid.Column="3"></TextBlock>
+            <TextBlock x:Name="carta4" Grid.Column="4"></TextBlock>
+            <TextBlock x:Name="carta5" Grid.Column="5"></TextBlock>
+            <TextBlock x:Name="carta6" Grid.Column="6"></TextBlock>
+        </Grid>
+    </Grid>
+</UserControl>

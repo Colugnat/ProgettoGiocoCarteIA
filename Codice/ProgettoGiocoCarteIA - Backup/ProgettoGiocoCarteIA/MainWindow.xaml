@@ -6,10 +6,10 @@
         xmlns:local="clr-namespace:ProgettoGiocoCarteIA"
         xmlns:view="clr-namespace:ProgettoGiocoCarteIA.View"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="413.253" Width="664.157">
     <Grid>
         <view:MainView>
-            
+
         </view:MainView>
     </Grid>
 </Window>

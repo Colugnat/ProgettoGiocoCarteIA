@@ -40,3 +40,5 @@ C:\Users\Ringo\Desktop\Progetti\Gioco carte IA\Codice\ProgettoGiocoCarteIA\Proge
 C:\Users\Ringo\Desktop\Progetti\Gioco carte IA\Codice\ProgettoGiocoCarteIA\ProgettoGiocoCarteIA\obj\Debug\RiconoscimentoCarte.csproj.CoreCompileInputs.cache
 C:\Users\Ringo\Desktop\Progetti\Gioco carte IA\Codice\ProgettoGiocoCarteIA\ProgettoGiocoCarteIA\obj\Debug\01 BaseMVVM.exe
 C:\Users\Ringo\Desktop\Progetti\Gioco carte IA\Codice\ProgettoGiocoCarteIA\ProgettoGiocoCarteIA\obj\Debug\01 BaseMVVM.pdb
+C:\Users\Ringo\Desktop\Progetti\Gioco carte IA\Codice\ProgettoGiocoCarteIA\ProgettoGiocoCarteIA\bin\Debug\IronOcr.dll
+C:\Users\Ringo\Desktop\Progetti\Gioco carte IA\Codice\ProgettoGiocoCarteIA\ProgettoGiocoCarteIA\bin\Debug\IronOcr.xml

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiconoscimentoCarte", "Prog
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntelligenzaArtificiale", "IntelligenzaArtificiale\IntelligenzaArtificiale.csproj", "{6683733D-6FEC-4ECF-9555-6AF51A8FEF22}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GiocoCarteIA", "GiocoCarteIA\GiocoCarteIA.csproj", "{BB4FBF00-AF17-438C-919B-7E2D316C3E4F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{6683733D-6FEC-4ECF-9555-6AF51A8FEF22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6683733D-6FEC-4ECF-9555-6AF51A8FEF22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6683733D-6FEC-4ECF-9555-6AF51A8FEF22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB4FBF00-AF17-438C-919B-7E2D316C3E4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB4FBF00-AF17-438C-919B-7E2D316C3E4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB4FBF00-AF17-438C-919B-7E2D316C3E4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB4FBF00-AF17-438C-919B-7E2D316C3E4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
