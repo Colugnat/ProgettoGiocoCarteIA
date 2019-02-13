@@ -28,8 +28,17 @@
             <local:StartGameView></local:StartGameView>
         </DataTemplate>
     </UserControl.Resources>
-    
+
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="7*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="7*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
         <!--<Grid.RowDefinitions>
             <RowDefinition Height="10*"/>
             <RowDefinition Height="*"/>
@@ -94,6 +103,6 @@
             <TextBlock x:Name="carta5" Grid.Column="5" TextAlignment="Center"></TextBlock>
             <TextBlock x:Name="carta6" Grid.Column="6" TextAlignment="Center"></TextBlock>
         </Grid>-->
-        <ContentControl Content="{Binding Path=CurrentViewModel}"></ContentControl>
+        <ContentControl Content="{Binding Path=CurrentViewModel}" Grid.Row="1" Grid.ColumnSpan="2"></ContentControl>
     </Grid>
 </UserControl>
