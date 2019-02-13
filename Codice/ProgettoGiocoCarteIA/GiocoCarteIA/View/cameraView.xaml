@@ -3,10 +3,24 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:wpf="clr-namespace:WebEye.Controls.Wpf;assembly=WebEye.Controls.Wpf.WebCameraControl"
              xmlns:local="clr-namespace:GiocoCarteIA.View"
+             DataContext="{Binding Source={StaticResource Locator}, Path=Camera}"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
-            
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <wpf:WebCameraControl x:Name="webCameraControl" Grid.ColumnSpan="2" />
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="1" Grid.ColumnSpan="2">
+            <ComboBox x:Name="comboBox" Width="100" DisplayMemberPath="Name" SelectionChanged="comboBox_SelectionChanged" />
+            <Button x:Name="okButton" Content="OK" Width="75" IsEnabled="False" Command="{Binding Path=OkCameraCommand}"/>
+        </StackPanel>
     </Grid>
 </UserControl>

@@ -31,7 +31,7 @@ namespace GiocoCarteIA.ViewModel
             GameUserPageCommand = new DelegateCommand(OnGameUserPage, CanGameUserPage);
             SettingsPageCommand = new DelegateCommand(OnSettingsPage, CanSettingsPage);
             StartGamePageCommand = new DelegateCommand(OnStartGamePage, CanStartGamePage);
-            CurrentViewModel = ViewModelLocator.Main;
+            CurrentViewModel = ViewModelLocator.Camera;
         }
 
         private bool CanCameraPage(object arg)

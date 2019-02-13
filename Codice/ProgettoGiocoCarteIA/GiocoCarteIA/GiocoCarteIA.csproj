@@ -75,6 +75,7 @@
     <Compile Include="Helper\ISimpleIoc.cs" />
     <Compile Include="Helper\PreferredConstructorAttribute.cs" />
     <Compile Include="Helper\SimpleIoc.cs" />
+    <Compile Include="Model\Game.cs" />
     <Compile Include="Service\ColorConverter.cs" />
     <Compile Include="Service\ColorInformation.cs" />
     <Compile Include="Service\ObjectColorData.cs" />
@@ -173,9 +174,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Model\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

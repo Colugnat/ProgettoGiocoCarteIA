@@ -2,8 +2,9 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:GiocoCarteIA"
+             xmlns:viewmodel="clr-namespace:GiocoCarteIA.ViewModel"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <viewmodel:ViewModelLocator x:Key="Locator"></viewmodel:ViewModelLocator>
     </Application.Resources>
 </Application>

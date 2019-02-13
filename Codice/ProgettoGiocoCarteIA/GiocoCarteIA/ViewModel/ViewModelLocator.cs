@@ -37,7 +37,7 @@ namespace GiocoCarteIA.ViewModel
         public ViewModelLocator()
         {
             ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
-            SimpleIoc.Default.Register<MainViewModel>(true);
+            SimpleIoc.Default.Register<MainViewModel>();
             SimpleIoc.Default.Register<CameraViewModel>();
             SimpleIoc.Default.Register<GameIAViewModel>();
             SimpleIoc.Default.Register<GameUserViewModel>();

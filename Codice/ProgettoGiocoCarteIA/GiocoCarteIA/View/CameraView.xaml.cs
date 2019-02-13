@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WebEye.Controls.Wpf;
 
 namespace GiocoCarteIA.View
 {
@@ -23,6 +24,22 @@ namespace GiocoCarteIA.View
         public CameraView()
         {
             InitializeComponent();
+            InitializeComboBox();
+        }
+        private void InitializeComboBox()
+        {
+            comboBox.ItemsSource = webCameraControl.GetVideoCaptureDevices();
+
+            if (comboBox.Items.Count > 0)
+            {
+                comboBox.SelectedItem = "";
+            }
+        }
+        private void comboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            okButton.IsEnabled = e.AddedItems.Count > 0;
+            var cameraId = (WebCameraId)comboBox.SelectedItem;
+            webCameraControl.StartCapture(cameraId);
         }
     }
 }
