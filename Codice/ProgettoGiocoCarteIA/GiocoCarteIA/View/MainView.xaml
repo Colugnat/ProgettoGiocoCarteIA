@@ -103,6 +103,8 @@
             <TextBlock x:Name="carta5" Grid.Column="5" TextAlignment="Center"></TextBlock>
             <TextBlock x:Name="carta6" Grid.Column="6" TextAlignment="Center"></TextBlock>
         </Grid>-->
+        <Image Grid.Column="1"/>
         <ContentControl Content="{Binding Path=CurrentViewModel}" Grid.Row="1" Grid.ColumnSpan="2"></ContentControl>
+        <Button Content="OK" Grid.Column="1" Grid.Row="2"/>
     </Grid>
 </UserControl>
