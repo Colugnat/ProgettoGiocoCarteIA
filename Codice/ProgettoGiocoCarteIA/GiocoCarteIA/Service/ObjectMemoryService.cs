@@ -25,7 +25,7 @@ namespace ObjectRecognition
                         System.Xml.Serialization.XmlSerializer serializer = new System.Xml.Serialization.XmlSerializer(typeof(List<ObjectSignatureData>));
                         objectSignatures = (List<ObjectSignatureData>)serializer.Deserialize(reader);
                     }
-                    catch (Exception ex)
+                    catch (Exception)
                     {
 
                     }
@@ -41,7 +41,7 @@ namespace ObjectRecognition
         public static void AddSignature(ObjectSignatureData newSignature)
         {
             objectSignatures.Add(newSignature);
-            sync();
+            Sync();
         }
 
         public static void RemoveSignatureByName(string name)
@@ -60,11 +60,11 @@ namespace ObjectRecognition
             if (objectToRemove != null)
             {
                 objectSignatures.Remove(objectToRemove);
-                sync();
+                Sync();
             }
         }
 
-        public static void sync()
+        public static void Sync()
         {
             InitializeObjectLibrary();
             FileInfo fi = new FileInfo("..\\..\\objectlibrary\\objectsignatures.xml");
@@ -76,7 +76,7 @@ namespace ObjectRecognition
                     System.Xml.Serialization.XmlSerializer serializer = new System.Xml.Serialization.XmlSerializer(typeof(List<ObjectSignatureData>));
                     serializer.Serialize(writer, objectSignatures);
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                 }
             }

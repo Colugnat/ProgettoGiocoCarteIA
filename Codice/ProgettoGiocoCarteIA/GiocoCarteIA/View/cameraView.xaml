@@ -19,8 +19,7 @@
         </Grid.RowDefinitions>
         <wpf:WebCameraControl x:Name="webCameraControl" Grid.ColumnSpan="2" />
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="1" Grid.ColumnSpan="2">
-            <ComboBox x:Name="comboBox" Width="100" DisplayMemberPath="Name" SelectionChanged="comboBox_SelectionChanged" />
-            <Button x:Name="okButton" Content="OK" Width="75" IsEnabled="False" Command="{Binding Path=OkCameraCommand}"/>
+            <ComboBox x:Name="comboBox" Width="100" DisplayMemberPath="Name" SelectionChanged="ComboBox_SelectionChanged" />
         </StackPanel>
     </Grid>
 </UserControl>

@@ -10,8 +10,8 @@ using System.Windows;
 
 namespace GiocoCarteIA.Model
 {
-    public static class Game
+    public class Game
     {
-        public static BindableBase currentViewModelBase;
+        public WebEye.Controls.Wpf.WebCameraId CameraId { get; set; }
     }
 }

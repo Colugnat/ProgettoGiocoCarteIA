@@ -19,19 +19,36 @@ namespace GiocoCarteIA.ViewModel
                 SetProperty(ref currentViewModelBase, value);
             }
         }
+        public IDelegateCommand NextPage { get; private set; }
         public IDelegateCommand CameraPageCommand { get; private set; }
         public IDelegateCommand GameIAPageCommand { get; private set; }
         public IDelegateCommand GameUserPageCommand { get; private set; }
         public IDelegateCommand SettingsPageCommand { get; private set; }
         public IDelegateCommand StartGamePageCommand { get; private set; }
+        private int ChooseView = 0;
         public MainViewModel()
         {
+            NextPage = new DelegateCommand(OnNextPage, CanNextPage);
             CameraPageCommand = new DelegateCommand(OnCameraPage, CanCameraPage);
             GameIAPageCommand = new DelegateCommand(OnGameIAPage, CanGameIAPage);
             GameUserPageCommand = new DelegateCommand(OnGameUserPage, CanGameUserPage);
             SettingsPageCommand = new DelegateCommand(OnSettingsPage, CanSettingsPage);
             StartGamePageCommand = new DelegateCommand(OnStartGamePage, CanStartGamePage);
             CurrentViewModel = ViewModelLocator.Camera;
+        }
+
+        private bool CanNextPage(object arg)
+        {
+            return true;
+        }
+
+        private void OnNextPage(object obj)
+        {
+            ChooseView += 1;
+            if(ChooseView == 1)
+            {
+                CurrentViewModel = ViewModelLocator.StartGame;
+            }
         }
 
         private bool CanCameraPage(object arg)

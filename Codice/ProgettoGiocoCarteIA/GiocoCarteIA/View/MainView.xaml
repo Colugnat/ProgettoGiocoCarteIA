@@ -105,6 +105,6 @@
         </Grid>-->
         <Image Grid.Column="1"/>
         <ContentControl Content="{Binding Path=CurrentViewModel}" Grid.Row="1" Grid.ColumnSpan="2"></ContentControl>
-        <Button Content="OK" Grid.Column="1" Grid.Row="2"/>
+        <Button Command="{Binding Path=NextPage}" Content="OK" Grid.Column="1" Grid.Row="2"/>
     </Grid>
 </UserControl>
