@@ -5,8 +5,44 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:GiocoCarteIA.View"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
+             d:DesignHeight="400" d:DesignWidth="700">
     <Grid>
-            
+        <TabControl>
+            <TabItem Header="Learning">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="LearningImageOne" Height="150"/>
+                    <Image x:Name="LearningImageTwo" Height="150" Grid.Column="1"/>
+                    <ListBox x:Name="LearnedObjectsList" Grid.Column="2" Width="136" Margin="0,30,0,150"/>
+                    <Label Content="Background image"/>
+                    <Label Content="Image with object to learn" Grid.Column="1"/>
+                    <Button x:Name="LearningImageOneButton" Content="Load Image" VerticalAlignment="Bottom" Height="20" Width="75" Margin="0,0,0,50"/>
+                    <Button x:Name="LearningImageTwoButton" Content="Load Image" Grid.Column="1" VerticalAlignment="Bottom" Height="20" Width="75" Margin="0,0,0,50"/>
+                    <Label Content="Learned objects" Grid.Column="2"/>
+                    <Button x:Name="LearnObjectButton" Content="Learn" Grid.Column="2" VerticalAlignment="Bottom" Height="20" Width="75" Margin="0,0,0,50"/>
+                    <Button x:Name="DeleteObjectButton" Content="Delete" Grid.Column="2" VerticalAlignment="Bottom" Height="20" Width="75" Margin="0,0,0,30"/>
+                    <TextBox x:Name="ObjectNameText" Grid.Column="2" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="140" Margin="0,0,0,75" />
+                    <Label Content="Name of object to learn" Grid.Column="2" VerticalAlignment="Bottom" Height="24" Margin="0,0,0,100"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Recognition">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock x:Name="AnalysisResultsText" TextWrapping="Wrap" Grid.Column="1" Height="190"/>
+                    <Label Content="What image recognizer finds" Grid.Column="1"/>
+                    <Label Content="Image to Analyze"/>
+                    <Button x:Name="AnalyzeButton" Content="Analyze Image" VerticalAlignment="Bottom" Margin="0,0,0,50" Grid.Column="1"/>
+                    <Button x:Name="AnalyzeImageButton" Content="Load Image" VerticalAlignment="Bottom" Margin="0,0,0,50"/>
+                    <Image x:Name="AnalysisImage" Height="190"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
     </Grid>
 </UserControl>

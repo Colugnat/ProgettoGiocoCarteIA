@@ -34,3 +34,7 @@ C:\Users\Ringo\Desktop\Progetti\Gioco carte IA\Codice\ProgettoGiocoCarteIA\Gioco
 C:\Users\Ringo\Desktop\Progetti\Gioco carte IA\Codice\ProgettoGiocoCarteIA\GiocoCarteIA\obj\Debug\GiocoCarteIA.csproj.CoreCompileInputs.cache
 C:\Users\Ringo\Desktop\Progetti\Gioco carte IA\Codice\ProgettoGiocoCarteIA\GiocoCarteIA\obj\Debug\01 BaseMVVM.exe
 C:\Users\Ringo\Desktop\Progetti\Gioco carte IA\Codice\ProgettoGiocoCarteIA\GiocoCarteIA\obj\Debug\01 BaseMVVM.pdb
+C:\Users\Ringo\Desktop\Progetti\Gioco carte IA\Codice\ProgettoGiocoCarteIA\GiocoCarteIA\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\Ringo\Desktop\Progetti\Gioco carte IA\Codice\ProgettoGiocoCarteIA\GiocoCarteIA\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Ringo\Desktop\Progetti\Gioco carte IA\Codice\ProgettoGiocoCarteIA\GiocoCarteIA\bin\Debug\Microsoft.Expression.Interactions.xml
+C:\Users\Ringo\Desktop\Progetti\Gioco carte IA\Codice\ProgettoGiocoCarteIA\GiocoCarteIA\bin\Debug\System.Windows.Interactivity.xml

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using GiocoCarteIA.Helper;
+using GiocoCarteIA.Model;
 using Microsoft.Practices.ServiceLocation;
 
 namespace GiocoCarteIA.ViewModel
@@ -34,10 +35,15 @@ namespace GiocoCarteIA.ViewModel
         {
             get { return ServiceLocator.Current.GetInstance<StartGameViewModel>(); }
         }
+        public static Camera CameraId
+        {
+            get { return ServiceLocator.Current.GetInstance<Camera>(); }
+        }
         public ViewModelLocator()
         {
             ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
             SimpleIoc.Default.Register<MainViewModel>();
+            SimpleIoc.Default.Register<Game>();
             SimpleIoc.Default.Register<CameraViewModel>();
             SimpleIoc.Default.Register<GameIAViewModel>();
             SimpleIoc.Default.Register<GameUserViewModel>();

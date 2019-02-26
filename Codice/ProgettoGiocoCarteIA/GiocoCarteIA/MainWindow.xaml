@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:GiocoCarteIA"
         xmlns:view="clr-namespace:GiocoCarteIA.View"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="700">
+        Title="Card game" Height="550" Width="850" Icon="uno.jpg">
     <Grid>
         <view:MainView>
             

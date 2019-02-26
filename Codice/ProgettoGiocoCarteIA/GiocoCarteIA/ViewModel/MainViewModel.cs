@@ -25,7 +25,8 @@ namespace GiocoCarteIA.ViewModel
         public IDelegateCommand GameUserPageCommand { get; private set; }
         public IDelegateCommand SettingsPageCommand { get; private set; }
         public IDelegateCommand StartGamePageCommand { get; private set; }
-        private int ChooseView = 0;
+        private int chooseView = 0;
+        private bool inSettingPage = false;
         public MainViewModel()
         {
             NextPage = new DelegateCommand(OnNextPage, CanNextPage);
@@ -44,10 +45,24 @@ namespace GiocoCarteIA.ViewModel
 
         private void OnNextPage(object obj)
         {
-            ChooseView += 1;
-            if(ChooseView == 1)
+            if (!inSettingPage)
+                chooseView += 1;
+            else
+                inSettingPage = false;
+            switch (chooseView)
             {
-                CurrentViewModel = ViewModelLocator.StartGame;
+                case 0:
+                    CurrentViewModel = ViewModelLocator.Camera;
+                    break;
+                case 1:
+                    CurrentViewModel = ViewModelLocator.StartGame;
+                    break;
+                default:
+                    if ((chooseView % 2) == 1)
+                        CurrentViewModel = ViewModelLocator.GameUser;
+                    else if ((chooseView % 2) == 0)
+                        CurrentViewModel = ViewModelLocator.GameIA;
+                    break;
             }
         }
 
@@ -88,6 +103,7 @@ namespace GiocoCarteIA.ViewModel
 
         private void OnSettingsPage(object obj)
         {
+            inSettingPage = true;
             CurrentViewModel = ViewModelLocator.Settings;
         }
 

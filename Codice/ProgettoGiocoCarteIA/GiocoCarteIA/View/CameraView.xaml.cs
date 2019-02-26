@@ -1,4 +1,6 @@
-﻿using System.Windows.Controls;
+﻿using GiocoCarteIA.Model;
+using System;
+using System.Windows.Controls;
 using WebEye.Controls.Wpf;
 
 namespace GiocoCarteIA.View
@@ -22,10 +24,10 @@ namespace GiocoCarteIA.View
                 comboBox.SelectedItem = "";
             }
         }
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void comboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            var cameraId = (WebCameraId)comboBox.SelectedItem;
-            webCameraControl.StartCapture(cameraId);
+            var x = (WebCameraId)comboBox.SelectedItem;
+            webCameraControl.StartCapture(x);
         }
     }
 }
