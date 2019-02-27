@@ -11,9 +11,9 @@ namespace GiocoCarteIA.ViewModel
     {
         private Camera model;
 
-        private ObservableCollection<String> camere;
+        private ObservableCollection<Camera> camere;
 
-        public ObservableCollection<String> Camere
+        public ObservableCollection<Camera> Camere
         {
             get { return camere; }
             set { camere = value; }
