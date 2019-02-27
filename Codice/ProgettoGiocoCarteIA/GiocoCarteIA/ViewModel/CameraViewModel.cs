@@ -11,9 +11,9 @@ namespace GiocoCarteIA.ViewModel
     {
         private Camera model;
 
-        private ObservableCollection<Camera> camere;
+        private ObservableCollection<String> camere;
 
-        public ObservableCollection<Camera> Camere
+        public ObservableCollection<String> Camere
         {
             get { return camere; }
             set { camere = value; }
@@ -36,7 +36,6 @@ namespace GiocoCarteIA.ViewModel
         {
             model = new Camera();
             List<WebCameraId> x = new List<WebCameraId>();
-
             //Camere = webCameraControl.GetVideoCaptureDevices();
         }
     }

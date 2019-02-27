@@ -1,5 +1,6 @@
 ﻿using GiocoCarteIA.Model;
 using System;
+using System.Collections.Generic;
 using System.Windows.Controls;
 using WebEye.Controls.Wpf;
 
@@ -18,13 +19,12 @@ namespace GiocoCarteIA.View
         private void InitializeComboBox()
         {
             comboBox.ItemsSource = webCameraControl.GetVideoCaptureDevices();
-
             if (comboBox.Items.Count > 0)
             {
                 comboBox.SelectedItem = "";
             }
         }
-        private void comboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var x = (WebCameraId)comboBox.SelectedItem;
             webCameraControl.StartCapture(x);
