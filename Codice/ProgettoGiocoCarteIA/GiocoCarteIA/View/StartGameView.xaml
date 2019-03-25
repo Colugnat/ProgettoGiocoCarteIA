@@ -2,49 +2,43 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:wpf="clr-namespace:WebEye.Controls.Wpf;assembly=WebEye.Controls.Wpf.WebCameraControl"
              xmlns:local="clr-namespace:GiocoCarteIA.View"
+             DataContext="{Binding Source={StaticResource Locator}, Path=StartGame}"
              mc:Ignorable="d" 
              d:DesignHeight="400" d:DesignWidth="700">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="4*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
         
-        <Image Grid.Column="0"/>
-        <Image Grid.Column="1"/>
-        <Image Grid.Column="2"/>
-        <Image Grid.Column="3"/>
-        <Image Grid.Column="4"/>
-        <Image Grid.Column="5"/>
-        <Image Grid.Column="6"/>
-        
-        <Button Grid.Row="1" Grid.Column="0" Content="Carta"/>
-        <Button Grid.Row="1" Grid.Column="1" Content="Carta"/>
-        <Button Grid.Row="1" Grid.Column="2" Content="Carta"/>
-        <Button Grid.Row="1" Grid.Column="3" Content="Carta"/>
-        <Button Grid.Row="1" Grid.Column="4" Content="Carta"/>
-        <Button Grid.Row="1" Grid.Column="5" Content="Carta"/>
-        <Button Grid.Row="1" Grid.Column="6" Content="Carta"/>
-        
-        <Label Grid.Row="2" Grid.Column="0"/>
-        <Label Grid.Row="2" Grid.Column="1"/>
-        <Label Grid.Row="2" Grid.Column="2"/>
-        <Label Grid.Row="2" Grid.Column="3"/>
-        <Label Grid.Row="2" Grid.Column="4"/>
-        <Label Grid.Row="2" Grid.Column="5"/>
-        <Label Grid.Row="2" Grid.Column="6"/>
+        <Button x:Name="FirstCard" Grid.Row="0" Grid.Column="0" Content="Carta" Click="FirstCard_Click"/>
+        <Button x:Name="SecondCard" Grid.Row="1" Grid.Column="0" Content="Carta" Click="SecondCard_Click"/>
+        <Button x:Name="ThirdCard" Grid.Row="2" Grid.Column="0" Content="Carta" Click="ThirdCard_Click"/>
+        <Button x:Name="FourthCard" Grid.Row="3" Grid.Column="0" Content="Carta" Click="FourthCard_Click"/>
+        <Button x:Name="FifthCard" Grid.Row="4" Grid.Column="0" Content="Carta" Click="FifthCard_Click"/>
+        <Button x:Name="SixthCard" Grid.Row="5" Grid.Column="0" Content="Carta" Click="SixthCard_Click"/>
+        <Button x:Name="SeventhCard" Grid.Row="6" Grid.Column="0" Content="Carta" Click="SeventhCard_Click"/>
 
+        <Label x:Name="FirstResult" Grid.Row="0" Grid.Column="1"/>
+        <Label x:Name="SecondResult" Grid.Row="1" Grid.Column="1"/>
+        <Label x:Name="ThirdResult" Grid.Row="2" Grid.Column="1"/>
+        <Label x:Name="FourthResult" Grid.Row="3" Grid.Column="1"/>
+        <Label x:Name="FifthResult" Grid.Row="4" Grid.Column="1"/>
+        <Label x:Name="SixthResult" Grid.Row="5" Grid.Column="1"/>
+        <Label x:Name="SeventhResult" Grid.Row="6" Grid.Column="1"/>
+
+        <wpf:WebCameraControl x:Name="webCameraControl" Visibility="Hidden"/>
     </Grid>
 </UserControl>

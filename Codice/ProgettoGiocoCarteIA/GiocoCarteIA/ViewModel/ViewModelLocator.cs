@@ -35,10 +35,6 @@ namespace GiocoCarteIA.ViewModel
         {
             get { return ServiceLocator.Current.GetInstance<StartGameViewModel>(); }
         }
-        public static Camera CameraId
-        {
-            get { return ServiceLocator.Current.GetInstance<Camera>(); }
-        }
         public ViewModelLocator()
         {
             ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);

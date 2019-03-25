@@ -7,7 +7,7 @@
              xmlns:wpf="clr-namespace:WebEye.Controls.Wpf;assembly=WebEye.Controls.Wpf.WebCameraControl"
              DataContext="{Binding Source={StaticResource Locator}, Path=Camera}"
              mc:Ignorable="d" 
-             d:DesignHeight="400" d:DesignWidth="700">
+             d:DesignHeight="400" d:DesignWidth="700" Unloaded="UserControl_Unloaded">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="10*"/>

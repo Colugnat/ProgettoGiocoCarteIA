@@ -105,6 +105,7 @@
     <Compile Include="Helper\PreferredConstructorAttribute.cs" />
     <Compile Include="Helper\SimpleIoc.cs" />
     <Compile Include="Model\Camera.cs" />
+    <Compile Include="Model\Carta.cs" />
     <Compile Include="Model\Game.cs" />
     <Compile Include="Model\IGame.cs" />
     <Compile Include="Service\ColorConverter.cs" />

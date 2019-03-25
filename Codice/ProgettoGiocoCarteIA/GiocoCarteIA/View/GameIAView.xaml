@@ -4,16 +4,18 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:GiocoCarteIA.View"
+             xmlns:wpf="clr-namespace:WebEye.Controls.Wpf;assembly=WebEye.Controls.Wpf.WebCameraControl"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
-    <Grid>
+    <Grid Loaded="Grid_Loaded">
         <Grid.RowDefinitions>
             <RowDefinition Height="9*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Image/>
-        <Label Grid.Row="1" HorizontalAlignment="Center"/>
-        <Button Width="100" Grid.Row="2" Content="Not correct?"/>
+        <wpf:WebCameraControl x:Name="webCameraControl" Visibility="Hidden"/>
+        <Label x:Name="Move" FontSize="32"/>
+        <Label x:Name="FoundedCard" Grid.Row="1" HorizontalAlignment="Center"/>
+        <Button x:Name="Correct" Width="100" Grid.Row="2" Content="Not correct?" Click="Correct_Click"/>
     </Grid>
 </UserControl>

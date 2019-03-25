@@ -1,4 +1,5 @@
 ﻿using GiocoCarteIA.Model;
+using GiocoCarteIA.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Windows.Controls;
@@ -28,6 +29,12 @@ namespace GiocoCarteIA.View
         {
             var x = (WebCameraId)comboBox.SelectedItem;
             webCameraControl.StartCapture(x);
+            Camera.CameraId = (WebCameraId)x;
+        }
+
+        private void UserControl_Unloaded(object sender, System.Windows.RoutedEventArgs e)
+        {
+            webCameraControl.StopCapture();
         }
     }
 }

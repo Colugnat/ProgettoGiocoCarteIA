@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace GiocoCarteIA.Model
 {
-    public class Camera
+    public static class Camera
     {
-        public WebEye.Controls.Wpf.WebCameraId CameraId { get; set; }
-        public string Name { get { return CameraId.Name; } }
+        public static WebEye.Controls.Wpf.WebCameraId CameraId { get; set; }
+        public static string Name { get { return CameraId.Name; } }
     }
 }
