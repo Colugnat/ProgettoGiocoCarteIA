@@ -90,6 +90,7 @@ namespace GiocoCarteIA.View
                         IsDrawCard();
                     }
                 }
+                saveCombinations = null;
             }
         }
 
@@ -124,12 +125,12 @@ namespace GiocoCarteIA.View
                     {
                         foreach (string comb in saveCombinations[num.Next(0, saveCombinations.Length)])
                         {
-                            Thread.Sleep(1000);
+                            Thread.Sleep(1500);
                             Move.Content = comb;
                             DeleteCard(comb);
                             if (Carta.NumCard == 1)
                             {
-                                Thread.Sleep(2000);
+                                Thread.Sleep(1500);
                                 Move.Content = "UNO!";
                             }
                             else if (Carta.NumCard == 0)
@@ -144,6 +145,7 @@ namespace GiocoCarteIA.View
                         IsDrawCard();
                     }
                 }
+                saveCombinations = null;
             }
         }
         private void IsDrawCard()
