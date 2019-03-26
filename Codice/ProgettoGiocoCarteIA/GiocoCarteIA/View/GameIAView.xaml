@@ -13,9 +13,10 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <wpf:WebCameraControl x:Name="webCameraControl" Visibility="Hidden"/>
+        <!--<wpf:WebCameraControl x:Name="webCameraControl" Visibility="Hidden"/>-->
         <Label x:Name="Move" FontSize="32"/>
         <Label x:Name="FoundedCard" Grid.Row="1" HorizontalAlignment="Center"/>
-        <Button x:Name="Correct" Width="100" Grid.Row="2" Content="Not correct?" Click="Correct_Click"/>
+        <Button x:Name="Correct" Width="100" Grid.Row="2" Margin="-100,0,0,0" Content="Not correct?" Click="Correct_Click"/>
+        <Button x:Name="Draw" Width="100" Grid.Row="2" Margin="100,0,0,0" Content="Draw" Click="Draw_Click" IsEnabled="False"/>
     </Grid>
 </UserControl>

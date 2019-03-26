@@ -1,21 +1,12 @@
 ﻿using GiocoCarteIA.Model;
 using ObjectRecognition;
-using System;
 using System.Collections.Generic;
 using System.Drawing.Imaging;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using WebEye.Controls.Wpf;
 
 namespace GiocoCarteIA.View
 {
@@ -27,6 +18,7 @@ namespace GiocoCarteIA.View
         public SettingsView()
         {
             InitializeComponent();
+            InitializeComboBox();
         }
         public BitmapImage Convert(System.Drawing.Image img)
         {
@@ -140,6 +132,35 @@ namespace GiocoCarteIA.View
             foreach (ObjectSignatureData objectSignatureData in learnedObjects)
             {
                 this.LearnedObjectsList.Items.Add(objectSignatureData.ObjectName);
+            }
+        }
+        private void OnSelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            startButton.IsEnabled = e.AddedItems.Count > 0;
+        }
+        private void OnStartButtonClick(object sender, RoutedEventArgs e)
+        {
+            var cameraId = (WebCameraId)comboBox.SelectedItem;
+            webCameraControl.StartCapture(cameraId);
+            Camera.CameraId = cameraId;
+
+        }
+        private void OnStopButtonClick(object sender, RoutedEventArgs e)
+        {
+            webCameraControl.StopCapture();
+        }
+
+        private void UserControl_Unloaded(object sender, RoutedEventArgs e)
+        {
+            if (webCameraControl.IsCapturing)
+                webCameraControl.StopCapture();
+        }
+        private void InitializeComboBox()
+        {
+            comboBox.ItemsSource = webCameraControl.GetVideoCaptureDevices();
+            if (comboBox.Items.Count > 0)
+            {
+                comboBox.SelectedItem = "";
             }
         }
     }

@@ -29,12 +29,13 @@ namespace GiocoCarteIA.View
         {
             var x = (WebCameraId)comboBox.SelectedItem;
             webCameraControl.StartCapture(x);
-            Camera.CameraId = (WebCameraId)x;
+            Camera.CameraId = x;
         }
 
         private void UserControl_Unloaded(object sender, System.Windows.RoutedEventArgs e)
         {
-            webCameraControl.StopCapture();
+            if(webCameraControl.IsCapturing)
+                webCameraControl.StopCapture();
         }
     }
 }

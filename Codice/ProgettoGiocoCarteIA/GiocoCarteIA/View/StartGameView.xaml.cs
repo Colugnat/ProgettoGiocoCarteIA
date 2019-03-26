@@ -19,14 +19,16 @@ namespace GiocoCarteIA.View
     {
         public StartGameView()
         {
-            Carta.CardAI = new String[7][];
+            Carta.NumCard = 0;
+            Carta.CardAI = new String[75][];
             InitializeComponent();
             for (int i = 0; i < 7; i++)
             {
                 Carta.CardAI[i] = new String[2];
+                Carta.NumCard += 1;
             }
         }
-        public string identifierObject()
+        private string identifierObject()
         {
             webCameraControl.StartCapture(Camera.CameraId);
             var identificationImage = webCameraControl.GetCurrentImage();
@@ -49,7 +51,7 @@ namespace GiocoCarteIA.View
             }
             return "Not work";
         }
-        public BitmapImage Convert(System.Drawing.Image img)
+        private BitmapImage Convert(System.Drawing.Image img)
         {
             using (var memory = new MemoryStream())
             {

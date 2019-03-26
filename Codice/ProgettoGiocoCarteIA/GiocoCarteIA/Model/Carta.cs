@@ -12,5 +12,6 @@ namespace GiocoCarteIA.Model
         public static String[] CardInGameCopy { get; set; }
         public static String[][] CardAI { get; set; }
         public static String[][] CardAICopy { get; set; }
+        public static int NumCard { get; set; }
     }
 }

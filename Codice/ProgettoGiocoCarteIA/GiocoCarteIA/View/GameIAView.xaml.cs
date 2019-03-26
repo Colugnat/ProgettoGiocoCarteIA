@@ -7,6 +7,7 @@ using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -69,13 +70,24 @@ namespace GiocoCarteIA.View
                     {
                         foreach (string comb in saveCombinations[num.Next(0, saveCombinations.Length)])
                         {
-                            Move.Content += comb;
+                            Thread.Sleep(1000);
+                            Move.Content = comb;
                             DeleteCard(comb);
+                            if (Carta.NumCard == 1)
+                            {
+                                Thread.Sleep(2000);
+                                Move.Content = "UNO!";
+                            }
+                            else if (Carta.NumCard == 0)
+                            {
+                                Move.Content = "!!!!!! I WIN !!!!!!";
+                            }
                         }
                     }
                     else
                     {
                         Move.Content = "DRAW";
+                        IsDrawCard();
                     }
                 }
             }
@@ -112,16 +124,31 @@ namespace GiocoCarteIA.View
                     {
                         foreach (string comb in saveCombinations[num.Next(0, saveCombinations.Length)])
                         {
-                            Move.Content += comb;
+                            Thread.Sleep(1000);
+                            Move.Content = comb;
                             DeleteCard(comb);
+                            if (Carta.NumCard == 1)
+                            {
+                                Thread.Sleep(2000);
+                                Move.Content = "UNO!";
+                            }
+                            else if (Carta.NumCard == 0)
+                            {
+                                Move.Content = "!!!!!! I WIN !!!!!!";
+                            }
                         }
                     }
                     else
                     {
                         Move.Content = "DRAW";
+                        IsDrawCard();
                     }
                 }
             }
+        }
+        private void IsDrawCard()
+        {
+            Draw.IsEnabled = true;
         }
         private String AddTab(bool remove)
         {
@@ -165,19 +192,20 @@ namespace GiocoCarteIA.View
             Save();
             combinations.RemoveRange(0, combinations.Count);
         }
-        public void DeleteCard(string delete)
+        private void DeleteCard(string delete)
         {
             for(int i = 0; i > Carta.CardAI.Length; i++)
             {
-                if ((Carta.CardAI[0] + " " + Carta.CardAI[1]) == delete)
+                if ((Carta.CardAI[i][0] + " " + Carta.CardAI[i][1]) == delete)
                 {
                     Carta.CardAI[i][0] = "";
                     Carta.CardAI[i][1] = "";
+                    Carta.NumCard -= 1;
                     break;
                 }
             }
         }
-        public BitmapImage Convert(System.Drawing.Image img)
+        private BitmapImage Convert(System.Drawing.Image img)
         {
             using (var memory = new MemoryStream())
             {
@@ -192,6 +220,11 @@ namespace GiocoCarteIA.View
 
                 return bitmapImage;
             }
+        }
+
+        private void Draw_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

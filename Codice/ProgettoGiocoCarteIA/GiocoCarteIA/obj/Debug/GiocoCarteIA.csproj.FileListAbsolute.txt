@@ -1,10 +1,14 @@
 C:\Users\Ringo\Desktop\Progetti\Gioco carte IA\Codice\ProgettoGiocoCarteIA\GiocoCarteIA\bin\Debug\01 BaseMVVM.exe.config
 C:\Users\Ringo\Desktop\Progetti\Gioco carte IA\Codice\ProgettoGiocoCarteIA\GiocoCarteIA\bin\Debug\01 BaseMVVM.exe
 C:\Users\Ringo\Desktop\Progetti\Gioco carte IA\Codice\ProgettoGiocoCarteIA\GiocoCarteIA\bin\Debug\01 BaseMVVM.pdb
+C:\Users\Ringo\Desktop\Progetti\Gioco carte IA\Codice\ProgettoGiocoCarteIA\GiocoCarteIA\bin\Debug\Microsoft.Expression.Interactions.dll
 C:\Users\Ringo\Desktop\Progetti\Gioco carte IA\Codice\ProgettoGiocoCarteIA\GiocoCarteIA\bin\Debug\Microsoft.Practices.ServiceLocation.dll
 C:\Users\Ringo\Desktop\Progetti\Gioco carte IA\Codice\ProgettoGiocoCarteIA\GiocoCarteIA\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Ringo\Desktop\Progetti\Gioco carte IA\Codice\ProgettoGiocoCarteIA\GiocoCarteIA\bin\Debug\System.Windows.Interactivity.dll
 C:\Users\Ringo\Desktop\Progetti\Gioco carte IA\Codice\ProgettoGiocoCarteIA\GiocoCarteIA\bin\Debug\WebEye.Controls.Wpf.WebCameraControl.1.0.0.0.Fakes.dll
 C:\Users\Ringo\Desktop\Progetti\Gioco carte IA\Codice\ProgettoGiocoCarteIA\GiocoCarteIA\bin\Debug\WebEye.Controls.Wpf.WebCameraControl.dll
+C:\Users\Ringo\Desktop\Progetti\Gioco carte IA\Codice\ProgettoGiocoCarteIA\GiocoCarteIA\bin\Debug\Microsoft.Expression.Interactions.xml
+C:\Users\Ringo\Desktop\Progetti\Gioco carte IA\Codice\ProgettoGiocoCarteIA\GiocoCarteIA\bin\Debug\System.Windows.Interactivity.xml
 C:\Users\Ringo\Desktop\Progetti\Gioco carte IA\Codice\ProgettoGiocoCarteIA\GiocoCarteIA\bin\Debug\WebEye.Controls.Wpf.WebCameraControl.pdb
 C:\Users\Ringo\Desktop\Progetti\Gioco carte IA\Codice\ProgettoGiocoCarteIA\GiocoCarteIA\bin\Debug\WebEye.Controls.Wpf.WebCameraControl.1.0.0.0.Fakes.xml
 C:\Users\Ringo\Desktop\Progetti\Gioco carte IA\Codice\ProgettoGiocoCarteIA\GiocoCarteIA\bin\Debug\it\Microsoft.QualityTools.Testing.Fakes.resources.dll
@@ -34,7 +38,3 @@ C:\Users\Ringo\Desktop\Progetti\Gioco carte IA\Codice\ProgettoGiocoCarteIA\Gioco
 C:\Users\Ringo\Desktop\Progetti\Gioco carte IA\Codice\ProgettoGiocoCarteIA\GiocoCarteIA\obj\Debug\GiocoCarteIA.csproj.CoreCompileInputs.cache
 C:\Users\Ringo\Desktop\Progetti\Gioco carte IA\Codice\ProgettoGiocoCarteIA\GiocoCarteIA\obj\Debug\01 BaseMVVM.exe
 C:\Users\Ringo\Desktop\Progetti\Gioco carte IA\Codice\ProgettoGiocoCarteIA\GiocoCarteIA\obj\Debug\01 BaseMVVM.pdb
-C:\Users\Ringo\Desktop\Progetti\Gioco carte IA\Codice\ProgettoGiocoCarteIA\GiocoCarteIA\bin\Debug\Microsoft.Expression.Interactions.dll
-C:\Users\Ringo\Desktop\Progetti\Gioco carte IA\Codice\ProgettoGiocoCarteIA\GiocoCarteIA\bin\Debug\System.Windows.Interactivity.dll
-C:\Users\Ringo\Desktop\Progetti\Gioco carte IA\Codice\ProgettoGiocoCarteIA\GiocoCarteIA\bin\Debug\Microsoft.Expression.Interactions.xml
-C:\Users\Ringo\Desktop\Progetti\Gioco carte IA\Codice\ProgettoGiocoCarteIA\GiocoCarteIA\bin\Debug\System.Windows.Interactivity.xml
