@@ -45,7 +45,7 @@
         </task>
         <task id="12" name="IMPLEMENTAZIONE" meeting="false" start="2019-01-15" duration="30" complete="0" expand="true">
             <task id="17" name="Riconoscimento carta" meeting="false" start="2019-01-15" duration="14" complete="0" expand="true"/>
-            <task id="20" name="Riconoscimento campo da gioco" meeting="false" start="2019-02-04" duration="2" complete="0" expand="true"/>
+            <task id="20" name="Creazione campo da gioco" meeting="false" start="2019-02-04" duration="2" complete="0" expand="true"/>
             <task id="21" name="Riconoscimento carte in gioco" meeting="false" start="2019-02-11" duration="19" complete="0" expand="true"/>
             <task id="22" name="Creazione IA" meeting="false" start="2019-01-29" duration="2" complete="0" expand="true"/>
             <task id="23" name="Scelta della mossa" meeting="false" start="2019-02-26" duration="12" complete="0" expand="true"/>
@@ -53,7 +53,7 @@
         </task>
         <task id="13" name="TEST" meeting="false" start="2019-01-30" duration="29" complete="0" expand="true">
             <task id="19" name="Test riconoscimento carta" meeting="false" start="2019-04-03" duration="2" complete="0" expand="true"/>
-            <task id="28" name="Test riconoscimento campo da gioco" meeting="false" start="2019-02-05" duration="1" complete="0" expand="true"/>
+            <task id="28" name="Test funzionamento campo da gioco" meeting="false" start="2019-02-05" duration="1" complete="0" expand="true"/>
             <task id="29" name="Test riconoscimento carte in gioco" meeting="false" start="2019-04-03" duration="2" complete="0" expand="true"/>
             <task id="30" name="Test creazione IA" meeting="false" start="2019-01-30" duration="1" complete="0" expand="true"/>
             <task id="31" name="Test scelta della mossa" meeting="false" start="2019-03-18" duration="4" complete="0" expand="true"/>
