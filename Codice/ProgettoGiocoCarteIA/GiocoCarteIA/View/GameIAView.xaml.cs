@@ -226,7 +226,35 @@ namespace GiocoCarteIA.View
 
         private void Draw_Click(object sender, RoutedEventArgs e)
         {
-
+            Carta.NumCard += 1;
+            var card = IdentifierObject().Split(' ');
+            Carta.CardAI[Carta.NumCard][0] = card[0];
+            Carta.CardAI[Carta.NumCard][1] = card[1];
+            Carta.CardAICopy = (String[][])Carta.CardAI.Clone();
+            SelectGame(Carta.CardInGameCopy[0], Carta.CardInGameCopy[1], false);
+        }
+        private string IdentifierObject()
+        {
+            webCameraControl.StartCapture(Camera.CameraId);
+            var identificationImage = webCameraControl.GetCurrentImage();
+            webCameraControl.StopCapture();
+            if (identificationImage == null)
+            {
+                MessageBox.Show("Please select an image to analyze");
+            }
+            else
+            {
+                IList<string> identifiedObjects = ObjectIdentificationService.AnalyzeImage(Convert(identificationImage));
+                if (identifiedObjects.Count == 0)
+                {
+                    return "Not work";
+                }
+                else
+                {
+                    return identifiedObjects[0];
+                }
+            }
+            return "Not work";
         }
     }
 }

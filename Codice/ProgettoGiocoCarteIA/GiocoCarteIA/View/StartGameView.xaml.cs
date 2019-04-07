@@ -22,13 +22,12 @@ namespace GiocoCarteIA.View
             Carta.NumCard = 0;
             Carta.CardAI = new String[75][];
             InitializeComponent();
-            for (int i = 0; i < 7; i++)
+            for (int i = 0; i < Carta.CardAI.Length; i++)
             {
                 Carta.CardAI[i] = new String[2];
-                Carta.NumCard += 1;
             }
         }
-        private string identifierObject()
+        private string IdentifierObject()
         {
             webCameraControl.StartCapture(Camera.CameraId);
             var identificationImage = webCameraControl.GetCurrentImage();
@@ -69,7 +68,9 @@ namespace GiocoCarteIA.View
         }
         private void FirstCard_Click(object sender, RoutedEventArgs e)
         {
-            var card = identifierObject().Split(' ');
+            if (Carta.CardAI[0] != null)
+                Carta.NumCard += 1;
+            var card = IdentifierObject().Split(' ');
             FirstResult.Content = card[0] + " " + card[1];
             Carta.CardAI[0][0] = card[0];
             Carta.CardAI[0][1] = card[1];
@@ -77,7 +78,9 @@ namespace GiocoCarteIA.View
         }
         private void SecondCard_Click(object sender, RoutedEventArgs e)
         {
-            var card = identifierObject().Split(' ');
+            if (Carta.CardAI[1] != null)
+                Carta.NumCard += 1;
+            var card = IdentifierObject().Split(' ');
             SecondResult.Content = card[0] + " " + card[1];
             Carta.CardAI[1][0] = card[0];
             Carta.CardAI[1][1] = card[1];
@@ -86,7 +89,9 @@ namespace GiocoCarteIA.View
 
         private void ThirdCard_Click(object sender, RoutedEventArgs e)
         {
-            var card = identifierObject().Split(' ');
+            if (Carta.CardAI[2] != null)
+                Carta.NumCard += 1;
+            var card = IdentifierObject().Split(' ');
             ThirdResult.Content = card[0] + " " + card[1];
             Carta.CardAI[2][0] = card[0];
             Carta.CardAI[2][1] = card[1];
@@ -95,7 +100,9 @@ namespace GiocoCarteIA.View
 
         private void FourthCard_Click(object sender, RoutedEventArgs e)
         {
-            var card = identifierObject().Split(' ');
+            if (Carta.CardAI[3] != null)
+                Carta.NumCard += 1;
+            var card = IdentifierObject().Split(' ');
             FourthResult.Content = card[0] + " " + card[1];
             Carta.CardAI[3][0] = card[0];
             Carta.CardAI[3][1] = card[1];
@@ -104,7 +111,9 @@ namespace GiocoCarteIA.View
 
         private void FifthCard_Click(object sender, RoutedEventArgs e)
         {
-            var card = identifierObject().Split(' ');
+            if (Carta.CardAI[4] != null)
+                Carta.NumCard += 1;
+            var card = IdentifierObject().Split(' ');
             FifthResult.Content = card[0] + " " + card[1];
             Carta.CardAI[4][0] = card[0];
             Carta.CardAI[4][1] = card[1];
@@ -113,7 +122,9 @@ namespace GiocoCarteIA.View
 
         private void SixthCard_Click(object sender, RoutedEventArgs e)
         {
-            var card = identifierObject().Split(' ');
+            if (Carta.CardAI[5] != null)
+                Carta.NumCard += 1;
+            var card = IdentifierObject().Split(' ');
             SixthResult.Content = card[0] + " " + card[1];
             Carta.CardAI[5][0] = card[0];
             Carta.CardAI[5][1] = card[1];
@@ -122,7 +133,9 @@ namespace GiocoCarteIA.View
 
         private void SeventhCard_Click(object sender, RoutedEventArgs e)
         {
-            var card = identifierObject().Split(' ');
+            if (Carta.CardAI[6] != null)
+                Carta.NumCard += 1;
+            var card = IdentifierObject().Split(' ');
             SeventhResult.Content = card[0] + " " + card[1];
             Carta.CardAI[6][0] = card[0];
             Carta.CardAI[6][1] = card[1];

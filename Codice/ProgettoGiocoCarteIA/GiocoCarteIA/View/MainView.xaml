@@ -51,6 +51,6 @@
         <Border BorderBrush="Black" BorderThickness="4" Grid.Row="1" Grid.ColumnSpan="2">
                 <ContentControl Content="{Binding Path=CurrentViewModel}"/>
         </Border>
-        <Button Command="{Binding Path=NextPage}" Content="OK" Grid.Column="1" Grid.Row="2"/>
+        <Button x:Name="NextPage" Command="{Binding Path=NextPage}" Click="NextPage_Click"  Content="OK" Grid.Column="1" Grid.Row="2"/>
     </Grid>
 </UserControl>

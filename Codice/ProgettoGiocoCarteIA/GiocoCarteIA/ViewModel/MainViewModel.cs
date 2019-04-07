@@ -1,4 +1,5 @@
 ﻿using GiocoCarteIA.Helper;
+using GiocoCarteIA.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -40,8 +41,24 @@ namespace GiocoCarteIA.ViewModel
 
         private bool CanNextPage(object arg)
         {
-            return true;
-        }
+            switch (chooseView)
+            {
+                case 0:
+                    if (Camera.CameraId == null)
+                        return false;
+                    else
+                        return true;
+                case 1:
+                    if (Carta.NumCard == 7)
+                        return true;
+                    else
+                        return false;
+            }
+            return false;
+
+
+
+    }
 
         private void OnNextPage(object obj)
         {
