@@ -26,10 +26,11 @@ namespace GiocoCarteIA.ViewModel
         public IDelegateCommand GameUserPageCommand { get; private set; }
         public IDelegateCommand SettingsPageCommand { get; private set; }
         public IDelegateCommand StartGamePageCommand { get; private set; }
-        private int chooseView = 0;
+        
         private bool inSettingPage = false;
         public MainViewModel()
         {
+            Carta.ChooseView = 0;
             NextPage = new DelegateCommand(OnNextPage, CanNextPage);
             CameraPageCommand = new DelegateCommand(OnCameraPage, CanCameraPage);
             GameIAPageCommand = new DelegateCommand(OnGameIAPage, CanGameIAPage);
@@ -41,32 +42,15 @@ namespace GiocoCarteIA.ViewModel
 
         private bool CanNextPage(object arg)
         {
-            switch (chooseView)
-            {
-                case 0:
-                    if (Camera.CameraId == null)
-                        return false;
-                    else
-                        return true;
-                case 1:
-                    if (Carta.NumCard == 7)
-                        return true;
-                    else
-                        return false;
-            }
-            return false;
-
-
-
-    }
-
+            return true;
+        }
         private void OnNextPage(object obj)
         {
             if (!inSettingPage)
-                chooseView += 1;
+                Carta.ChooseView += 1;
             else
                 inSettingPage = false;
-            switch (chooseView)
+            switch (Carta.ChooseView)
             {
                 case 0:
                     CurrentViewModel = ViewModelLocator.Camera;
@@ -75,9 +59,9 @@ namespace GiocoCarteIA.ViewModel
                     CurrentViewModel = ViewModelLocator.StartGame;
                     break;
                 default:
-                    if ((chooseView % 2) == 1)
+                    if ((Carta.ChooseView % 2) == 1)
                         CurrentViewModel = ViewModelLocator.GameUser;
-                    else if ((chooseView % 2) == 0)
+                    else if ((Carta.ChooseView % 2) == 0)
                         CurrentViewModel = ViewModelLocator.GameIA;
                     break;
             }

@@ -1,4 +1,5 @@
 ﻿using GiocoCarteIA.Model;
+using GiocoCarteIA.ViewModel;
 using ObjectRecognition;
 using System;
 using System.Collections.Generic;
@@ -24,7 +25,11 @@ namespace GiocoCarteIA.View
         private void NextPage_Click(object sender, RoutedEventArgs e)
         {
             if (Camera.CameraId == null)
+            {
                 MessageBox.Show("Insert a camera for continue the game.");
+                Carta.ChooseView = -1;
+            }
+                
         }
     }
 }
