@@ -15,11 +15,19 @@ namespace GiocoCarteIA.View
     /// </summary>
     public partial class SettingsView : UserControl
     {
+        /// <summary>
+        /// Constructor
+        /// </summary>
         public SettingsView()
         {
             InitializeComponent();
             InitializeComboBox();
         }
+        /// <summary>
+        /// Convert the image in BitmapImage
+        /// </summary>
+        /// <param name="img">The image to convert</param>
+        /// <returns>The new BitmapImage</returns>
         public BitmapImage Convert(System.Drawing.Image img)
         {
             using (var memory = new MemoryStream())
@@ -40,31 +48,41 @@ namespace GiocoCarteIA.View
         private BitmapImage learningImage = null;
         private BitmapImage backgroundImage = null;
         private BitmapImage identificationImage = null;
-
+        /// <summary>
+        /// Backgroung image to learn
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void LearningImageOneButton_Click(object sender, RoutedEventArgs e)
         {
-            webCameraControl.StartCapture(Camera.CameraId);
             backgroundImage = Convert(webCameraControl.GetCurrentImage());
-            webCameraControl.StopCapture();
             this.LearningImageOne.Source = backgroundImage;
         }
-
+        /// <summary>
+        /// Object to learn
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void LearningImageTwoButton_Click(object sender, RoutedEventArgs e)
         {
-            webCameraControl.StartCapture(Camera.CameraId);
             learningImage = Convert(webCameraControl.GetCurrentImage());
-            webCameraControl.StopCapture();
             this.LearningImageTwo.Source = learningImage;
         }
-
+        /// <summary>
+        /// Image to analyze
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AnalyzeImageButton_Click(object sender, RoutedEventArgs e)
         {
-            webCameraControl.StartCapture(Camera.CameraId);
             identificationImage = Convert(webCameraControl.GetCurrentImage());
-            webCameraControl.StopCapture();
             this.AnalysisImage.Source = identificationImage;
         }
-
+        /// <summary>
+        /// Method fo learn the new object
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void LearnObjectButton_Click(object sender, RoutedEventArgs e)
         {
             string objectName = this.ObjectNameText.Text;
@@ -82,7 +100,11 @@ namespace GiocoCarteIA.View
                 PopulateLearnedItemsList();
             }
         }
-
+        /// <summary>
+        /// Method for analyze and testing the program
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AnalyzeButton_Click(object sender, RoutedEventArgs e)
         {
             if (identificationImage == null)
@@ -105,12 +127,21 @@ namespace GiocoCarteIA.View
                 }
             }
         }
-
+        /// <summary>
+        /// Start the capture of a image
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Window_Loaded_1(object sender, RoutedEventArgs e)
         {
             PopulateLearnedItemsList();
+            webCameraControl.StartCapture(Camera.CameraId);
         }
-
+        /// <summary>
+        /// Delete a object from a database
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void DeleteObjectButton_Click(object sender, RoutedEventArgs e)
         {
             if (this.LearnedObjectsList.SelectedIndex != -1)
@@ -124,7 +155,9 @@ namespace GiocoCarteIA.View
                 MessageBox.Show("Please select an item to delete");
             }
         }
-
+        /// <summary>
+        /// Populate the list with all the object
+        /// </summary>
         private void PopulateLearnedItemsList()
         {
             List<ObjectSignatureData> learnedObjects = ObjectMemoryService.GetSignatures();
@@ -134,10 +167,20 @@ namespace GiocoCarteIA.View
                 this.LearnedObjectsList.Items.Add(objectSignatureData.ObjectName);
             }
         }
+        /// <summary>
+        /// Check if the button for capture the video is ready
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void OnSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             startButton.IsEnabled = e.AddedItems.Count > 0;
         }
+        /// <summary>
+        /// Take the new camera when the combobox item is changed
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void OnStartButtonClick(object sender, RoutedEventArgs e)
         {
             var cameraId = (WebCameraId)comboBox.SelectedItem;
@@ -145,16 +188,28 @@ namespace GiocoCarteIA.View
             Camera.CameraId = cameraId;
 
         }
+        /// <summary>
+        /// Stop capturing the image
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void OnStopButtonClick(object sender, RoutedEventArgs e)
         {
             webCameraControl.StopCapture();
         }
-
+        /// <summary>
+        /// Stop capturing the video
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void UserControl_Unloaded(object sender, RoutedEventArgs e)
         {
             if (webCameraControl.IsCapturing)
                 webCameraControl.StopCapture();
         }
+        /// <summary>
+        /// Initialize the combobox with all the cameras
+        /// </summary>
         private void InitializeComboBox()
         {
             comboBox.ItemsSource = webCameraControl.GetVideoCaptureDevices();

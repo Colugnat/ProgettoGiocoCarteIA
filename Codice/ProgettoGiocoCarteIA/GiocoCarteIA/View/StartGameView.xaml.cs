@@ -17,6 +17,9 @@ namespace GiocoCarteIA.View
     /// </summary>
     public partial class StartGameView : UserControl
     {
+        /// <summary>
+        /// Constructor
+        /// </summary>
         public StartGameView()
         {
             Carta.NumCard = 0;
@@ -26,12 +29,19 @@ namespace GiocoCarteIA.View
             {
                 Carta.CardAI[i] = new String[2];
             }
+            Carta.CardAICopy = new String[75][];
+            for (int i = 0; i < Carta.CardAICopy.Length; i++)
+            {
+                Carta.CardAICopy[i] = new String[2];
+            }
         }
+        /// <summary>
+        /// Method to recognize a object
+        /// </summary>
+        /// <returns></returns>
         private string IdentifierObject()
         {
-            webCameraControl.StartCapture(Camera.CameraId);
             var identificationImage = webCameraControl.GetCurrentImage();
-            webCameraControl.StopCapture();
             if (identificationImage == null)
             {
                 MessageBox.Show("Please select an image to analyze");
@@ -50,6 +60,11 @@ namespace GiocoCarteIA.View
             }
             return "Not work";
         }
+        /// <summary>
+        /// Method for convert a image to bitmapImage
+        /// </summary>
+        /// <param name="img">Image to convert</param>
+        /// <returns>Converted image</returns>
         private BitmapImage Convert(System.Drawing.Image img)
         {
             using (var memory = new MemoryStream())
@@ -66,6 +81,11 @@ namespace GiocoCarteIA.View
                 return bitmapImage;
             }
         }
+        /// <summary>
+        /// Button for save the first card
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FirstCard_Click(object sender, RoutedEventArgs e)
         {
             if (Carta.CardAI[0] != null)
@@ -74,8 +94,14 @@ namespace GiocoCarteIA.View
             FirstResult.Content = card[0] + " " + card[1];
             Carta.CardAI[0][0] = card[0];
             Carta.CardAI[0][1] = card[1];
-            Carta.CardAICopy = (String[][])Carta.CardAI.Clone();
+            Carta.CardAICopy[0][0] = card[0] + "";
+            Carta.CardAICopy[0][1] = card[1] + "";
         }
+        /// <summary>
+        /// Button for save the second card
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SecondCard_Click(object sender, RoutedEventArgs e)
         {
             if (Carta.CardAI[1] != null)
@@ -84,9 +110,14 @@ namespace GiocoCarteIA.View
             SecondResult.Content = card[0] + " " + card[1];
             Carta.CardAI[1][0] = card[0];
             Carta.CardAI[1][1] = card[1];
-            Carta.CardAICopy = (String[][])Carta.CardAI.Clone();
+            Carta.CardAICopy[1][0] = card[0] + "";
+            Carta.CardAICopy[1][1] = card[1] + "";
         }
-
+        /// <summary>
+        /// Button for save the third card
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ThirdCard_Click(object sender, RoutedEventArgs e)
         {
             if (Carta.CardAI[2] != null)
@@ -95,9 +126,14 @@ namespace GiocoCarteIA.View
             ThirdResult.Content = card[0] + " " + card[1];
             Carta.CardAI[2][0] = card[0];
             Carta.CardAI[2][1] = card[1];
-            Carta.CardAICopy = (String[][])Carta.CardAI.Clone();
+            Carta.CardAICopy[2][0] = card[0] + "";
+            Carta.CardAICopy[2][1] = card[1] + "";
         }
-
+        /// <summary>
+        /// Button for save the four card
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FourthCard_Click(object sender, RoutedEventArgs e)
         {
             if (Carta.CardAI[3] != null)
@@ -106,9 +142,14 @@ namespace GiocoCarteIA.View
             FourthResult.Content = card[0] + " " + card[1];
             Carta.CardAI[3][0] = card[0];
             Carta.CardAI[3][1] = card[1];
-            Carta.CardAICopy = (String[][])Carta.CardAI.Clone();
+            Carta.CardAICopy[3][0] = card[0] + "";
+            Carta.CardAICopy[3][1] = card[1] + "";
         }
-
+        /// <summary>
+        /// Button for save the fifth card
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FifthCard_Click(object sender, RoutedEventArgs e)
         {
             if (Carta.CardAI[4] != null)
@@ -117,9 +158,14 @@ namespace GiocoCarteIA.View
             FifthResult.Content = card[0] + " " + card[1];
             Carta.CardAI[4][0] = card[0];
             Carta.CardAI[4][1] = card[1];
-            Carta.CardAICopy = (String[][])Carta.CardAI.Clone();
+            Carta.CardAICopy[4][0] = card[0] + "";
+            Carta.CardAICopy[4][1] = card[1] + "";
         }
-
+        /// <summary>
+        /// Button for save the sixth card
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SixthCard_Click(object sender, RoutedEventArgs e)
         {
             if (Carta.CardAI[5] != null)
@@ -128,9 +174,14 @@ namespace GiocoCarteIA.View
             SixthResult.Content = card[0] + " " + card[1];
             Carta.CardAI[5][0] = card[0];
             Carta.CardAI[5][1] = card[1];
-            Carta.CardAICopy = (String[][])Carta.CardAI.Clone();
+            Carta.CardAICopy[5][0] = card[0] + "";
+            Carta.CardAICopy[5][1] = card[1] + "";
         }
-
+        /// <summary>
+        /// Button for save the seventh card
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SeventhCard_Click(object sender, RoutedEventArgs e)
         {
             if (Carta.CardAI[6] != null)
@@ -139,7 +190,27 @@ namespace GiocoCarteIA.View
             SeventhResult.Content = card[0] + " " + card[1];
             Carta.CardAI[6][0] = card[0];
             Carta.CardAI[6][1] = card[1];
-            Carta.CardAICopy = (String[][])Carta.CardAI.Clone();
+            Carta.CardAICopy[6][0] = card[0] + "";
+            Carta.CardAICopy[6][1] = card[1] + "";
+        }
+        /// <summary>
+        /// Start the capture of the camera
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void UserControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            webCameraControl.StartCapture(Camera.CameraId);
+        }
+        /// <summary>
+        /// Stop the capture of the camera
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void UserControl_Unloaded(object sender, RoutedEventArgs e)
+        {
+            if (webCameraControl.IsCapturing)
+                webCameraControl.StopCapture();
         }
     }
 }

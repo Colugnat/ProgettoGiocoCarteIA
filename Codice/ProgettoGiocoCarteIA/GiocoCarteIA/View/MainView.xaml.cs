@@ -21,15 +21,27 @@ namespace GiocoCarteIA.View
             InitializeComponent();
 
         }
-
+        /// <summary>
+        /// The button for go in the next page, is needed to check if it's possible to go in the next page
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void NextPage_Click(object sender, RoutedEventArgs e)
         {
             if (Camera.CameraId == null)
             {
                 MessageBox.Show("Insert a camera for continue the game.");
                 Carta.ChooseView = -1;
-            }
-                
+            }      
+        }
+        /// <summary>
+        /// Check the settings page is possible to use
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Image_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            NextPage_Click(sender, e);
         }
     }
 }

@@ -7,7 +7,7 @@
              xmlns:local="clr-namespace:GiocoCarteIA.View"
              DataContext="{Binding Source={StaticResource Locator}, Path=StartGame}"
              mc:Ignorable="d" 
-             d:DesignHeight="400" d:DesignWidth="700">
+             d:DesignHeight="400" d:DesignWidth="700" Unloaded="UserControl_Unloaded" Loaded="UserControl_Loaded">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -19,10 +19,11 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="3*"/>
         </Grid.ColumnDefinitions>
-        
+
         <Button x:Name="FirstCard" Grid.Row="0" Grid.Column="0" Content="Carta" Click="FirstCard_Click"/>
         <Button x:Name="SecondCard" Grid.Row="1" Grid.Column="0" Content="Carta" Click="SecondCard_Click"/>
         <Button x:Name="ThirdCard" Grid.Row="2" Grid.Column="0" Content="Carta" Click="ThirdCard_Click"/>
@@ -39,6 +40,6 @@
         <Label x:Name="SixthResult" Grid.Row="5" Grid.Column="1"/>
         <Label x:Name="SeventhResult" Grid.Row="6" Grid.Column="1"/>
 
-        <wpf:WebCameraControl x:Name="webCameraControl" Visibility="Hidden"/>
+        <wpf:WebCameraControl x:Name="webCameraControl" Grid.Column="2" Grid.RowSpan="7"/>
     </Grid>
 </UserControl>

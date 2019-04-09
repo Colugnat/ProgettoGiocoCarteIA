@@ -17,6 +17,9 @@ namespace GiocoCarteIA.View
             InitializeComponent();
             InitializeComboBox();
         }
+        /// <summary>
+        /// This method it's needed for refill the combox item with all the cameras
+        /// </summary>
         private void InitializeComboBox()
         {
             comboBox.ItemsSource = webCameraControl.GetVideoCaptureDevices();
@@ -25,13 +28,22 @@ namespace GiocoCarteIA.View
                 comboBox.SelectedItem = "";
             }
         }
+        /// <summary>
+        /// Set the camera when combox item is changed
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var x = (WebCameraId)comboBox.SelectedItem;
             webCameraControl.StartCapture(x);
             Camera.CameraId = x;
         }
-
+        /// <summary>
+        /// Stop the capturing of the camera
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void UserControl_Unloaded(object sender, System.Windows.RoutedEventArgs e)
         {
             if(webCameraControl.IsCapturing)
